@@ -1,0 +1,43 @@
+*{
+    /* font-family: "Montserrat", sans-serif; */
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#img5{
+    height: 300px;
+    width: 480px;
+}
+#img4{
+    height: 300px;
+    width: 330px;
+}
+#img3{
+    height: 300px;
+    width: auto;
+}
+#img2{
+    height: 300px;
+    width: auto;
+}
+#img1{
+    height: 240px;
+    width: auto;
+    transform: translateY(-30px);
+}
+h1{
+    text-align: center;
+    font-size: 60px;
+    color: white;
+}
+#title{
+    background-color: blueviolet;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin: 0 0 20px 0;
+}
+h2{
+    padding-left: 25px;
+    font-size: 25px;
+    font-weight: 600;
+}
