@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(-45deg, violet, orange, purple, pink);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+#card {
+  height: 80vh;
+  width: 33vw;
+  background-color: rgba(238, 238, 238, 0.977);
+  border-radius: 30px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.logo {
+  height: 150px;
+  width: auto;
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.details {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+label {
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 5px 8px;
+  border: none;
+  border-bottom: solid 3px rgb(127, 127, 127);
+  background-color: inherit;
+}
+
+#title,
+.details :hover {
+  cursor: pointer;
+}
+
+a {
+  padding: 10px 35px;
+  background-color: red;
+  color: white;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  border-radius: 50px;
+  border: none;
+  text-decoration: none;
+}
+
+.red:hover {
+  background-color: rgb(204, 51, 51);
+}
+
+card:nth-child(n) {
+  margin: 10px 0;
+}
+
+#button {
+  margin-top: 40px;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 50% 100%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 0%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
