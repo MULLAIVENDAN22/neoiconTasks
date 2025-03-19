@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(-45deg, violet, orange, purple, pink);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+#card {
+  height: 65vh;
+  width: 33vw;
+  background-color: rgba(238, 238, 238, 0.977);
+  border-radius: 30px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#phase_1 {
+  max-width: 100%;
+}
+
+#title {
+  background-color: rgb(140, 0, 255);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+}
+
+#list {
+  margin-top: 20px;
+  margin-left: 20%;
+  width: 40%;
+  background-color: rgb(118, 25, 193);
+  color: white;
+  padding: 10px 30px;
+  border-radius: 25px;
+}
+
+#contact {
+  margin-top: 20px;
+  margin-left: 6%;
+  width: 70%;
+  background-color: rgb(118, 25, 193);
+  color: white;
+  padding: 10px 30px;
+  border-radius: 25px;
+}
+
+#title h1 {
+  color: white;
+  font-size: 40px;
+}
+
+#title h4 {
+  font-size: 16px;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 50% 100%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 0%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
