@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@535&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        background-color: #ebc3c3;
+      }
+      .container {
+        width: 100%;
+        height: 100%;
+        font-family: "Winky Sans", sans-serif;
+      }
+      a {
+        text-decoration: none;
+        font-size: 23px;
+        color: #ffd4cb;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 30%;
+        padding: 20px;
+        background-color: #e69db8;
+        border-radius: 20px;
+        /* position: sticky;
+        top: 0%; */
+      }
+      nav .profile {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 70px;
+      }
+      .nav-content:hover {
+        color: #694061;
+      }
+      h4 {
+        display: inline;
+      }
+      .topic {
+        font-size: 40px;
+        color: #58184b;
+      }
+      .topic h4 {
+        font-size: 50px !important;
+        font-weight: 900;
+      }
+      .topic:hover {
+        color: #ffd4cb;
+      }
+      .special {
+        padding: 10px 16px;
+        border: none;
+        background-color: #d33d74;
+        border-radius: 30px;
+      }
+      .special:hover {
+        background-color: #e6558ad6;
+      }
+      button {
+        width: 45%;
+        padding: 10px 16px;
+        border: 5px solid #bb0a62;
+        background-color: initial;
+        color: #6a1b45;
+        text-align: center;
+        border-radius: 30px;
+        font-size: 18px;
+        font-weight: 600;
+        margin: 7% 0 0 25%;
+      }
+      button:hover {
+        background-color: #bb0a62;
+        color: #ffd4cb;
+      }
+      .intro {
+        margin-top: 2.5%;
+        margin-left: 22%;
+        margin-right: 22%;
+        margin-bottom: 1.5%;
+        display: flex;
+        gap: 7%;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+      }
+      .intro-photo img {
+        height: 300px;
+        width: 300px;
+        object-fit: cover;
+        object-position: 30% 30%;
+        border-radius: 40%;
+        position: relative;
+      }
+      .intro-photo {
+        padding: 1%;
+      }
+      .intro-words {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        color: #422438;
+      }
+      .intro-words h1 {
+        font-size: 55px;
+      }
+      .intro-words h3 {
+        font-size: 25px;
+        text-align: center;
+      }
+      .about {
+        margin-top: 2.8%;
+        margin-left: 18%;
+        margin-right: 18%;
+      }
+      .about h5 {
+        font-size: 30px;
+        padding: 1.5%;
+      }
+      .about p {
+        font-size: 18px;
+        padding: 0 1.5% 1.5% 1.5%;
+        text-align: justify;
+      }
+      .about h6 {
+        font-size: 20px;
+        padding: 0 1.5% 1.5% 1.5%;
+      }
+      .content {
+        margin-top: 3%;
+      }
+      .nav-content:hover,
+      .intro-words:hover,
+      .intro-photo:hover,
+      h5:hover,
+      h6:hover,
+      p:hover,
+      button:hover,
+      .topic:hover {
+        cursor: pointer;
+      }
+      @keyframes rotate {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .border {
+        position: absolute;
+        animation: rotate 10s linear infinite;
+        height: 360px;
+        width: 360px;
+        border: 8px dashed #6b2353;
+        border-radius: 50%;
+        top: 17.6%;
+        left: 53.2%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="border"></div>
+      <nav>
+        <div class="topic">
+          MV Rockers
+          <h4>.</h4>
+        </div>
+        <div class="profile">
+          <a href="#" class="nav-content">Home</a>
+          <a href="#" class="nav-content">About</a>
+          <a href="#" class="nav-content">Profile</a>
+          <a href="#" class="nav-content">Services</a>
+          <a href="#" class="special">Contact us</a>
+        </div>
+      </nav>
+      <div class="content">
+        <div class="intro">
+          <div class="intro-words">
+            <h1>Mullaivendan K</h1>
+            <h3>Frontend Developer</h3>
+            <button>Contact Me</button>
+          </div>
+          <div class="intro-photo">
+            <img src="mv gb 2.jpg" alt="" srcset="" />
+          </div>
+        </div>
+        <div class="about">
+          <h5>🚀 Frontend Developer | MERN Stack Enthusiast | Fast Learner</h5>
+
+          <p>
+            I am MULLAIVENDAN K, a passionate Frontend Developer Trainee at
+            Neoicon Solution with a strong foundation in the MERN (MongoDB,
+            Express.js, React.js, Node.js) stack. I enjoy building dynamic,
+            user-friendly web applications and continuously improving my skills.
+          </p>
+
+          <h6>🔹 What I Bring:</h6>
+          <p>
+            ✔ Proficiency in JavaScript, HTML, CSS for modern web development
+            <br />
+            ✔ Experience in MongoDB, Express.js, and Node.js for backend
+            integration<br />
+            ✔ Certifications from PrepInsta and Rinex, strengthening my
+            technical knowledge<br />
+            ✔ Strong problem-solving skills, self-motivation, and adaptability
+            to new technologies
+          </p>
+
+          <h6>🔹 My Mindset:</h6>
+          <p>
+            I am a fast learner who thrives in challenging environments and
+            enjoys staying updated with the latest tech trends. I am eager to
+            expand my expertise in frontend frameworks, performance
+            optimization, and user experience design.
+          </p>
+          <p style="font-weight: 600; padding: 1.5% 0; text-indent: 1.3%">
+            Let’s connect and discuss exciting opportunities in web development
+            and technology! 🚀
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
