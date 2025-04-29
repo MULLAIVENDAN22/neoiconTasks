@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        background-color: #e7f3ed;
+        font-family: "Winky Sans", sans-serif;
+        box-sizing: border-box;
+      }
+      .container {
+        height: 100%;
+        width: 100%;
+        padding: 1%;
+        display: grid;
+        grid-template-rows: 7vh 10fr 3fr 6fr;
+        grid-template-columns: repeat(4, 1fr);
+        background-color: #4d5358;
+        row-gap: 2%;
+        column-gap: 1%;
+        box-sizing: border-box;
+      }
+      .box {
+        background-color: cadetblue;
+      }
+      .box1 {
+        grid-column: span 5;
+      }
+      .box2 {
+        grid-column: span 1;
+      }
+      .box3 {
+        grid-column: span 4;
+      }
+      .box4 {
+        grid-column: span 1;
+      }
+      .box5 {
+        grid-column: span 1;
+      }
+      .box6 {
+        grid-column: span 1;
+      }
+      .box7 {
+        grid-column: span 2;
+      }
+      .box8 {
+        grid-column: span 5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box1"></div>
+      <div class="box box2"></div>
+      <div class="box box3"></div>
+      <div class="box box4"></div>
+      <div class="box box5"></div>
+      <div class="box box6"></div>
+      <div class="box box7"></div>
+      <div class="box box8"></div>
+    </div>
+  </body>
+</html>
