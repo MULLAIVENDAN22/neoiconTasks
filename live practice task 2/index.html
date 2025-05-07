@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@535&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Winky Sans", sans-serif;
+        box-sizing: border-box;
+        background-color: #8aa880;
+      }
+      .container {
+        width: 60vw;
+        height: 90vh;
+        background-color: #3a3a3a;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        border-radius: 30px;
+        padding: 1.5% 4% 2.2% 4%;
+      }
+      nav {
+        display: flex;
+        flex-direction: row;
+        height: 20%;
+        padding-bottom: 2%;
+        border-bottom: 2px solid #569563;
+        color: white;
+        gap: 0.2%;
+      }
+      .nav1 {
+        width: 29%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+      }
+      .nav1 h2 {
+        font-size: 27px;
+        white-space: nowrap;
+        font-weight: bolder;
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+      }
+      .nav1 h3 {
+        font-size: 20px;
+        white-space: nowrap;
+        font-weight: bolder;
+        padding-bottom: 2%;
+      }
+      .nav1 h5 {
+        font-size: 15px;
+        white-space: nowrap;
+        font-weight: 100;
+        color: #bfbfbf !important;
+        padding-bottom: 2%;
+      }
+      .nav1 button {
+        padding: 3.5% 14%;
+        color: white;
+        background-color: #569563;
+        border-radius: 30px;
+        border: none;
+      }
+      .nav2 {
+        width: 35%;
+      }
+      .nav2 h1 {
+        margin-top: 10%;
+        font-size: 25px;
+        text-align: center;
+      }
+      .nav3 {
+        width: 35%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5%;
+        margin-left: 3%;
+      }
+      .nav3 a {
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+      }
+      .nav3 button {
+        padding: 2% 8%;
+        color: white;
+        border-radius: 30px;
+        background-color: #7ccf81;
+        border: none;
+      }
+      .content {
+        display: flex;
+        flex-direction: row;
+
+        width: 100%;
+        gap: 2%;
+        padding: 2%;
+      }
+      .contents {
+        display: flex;
+        flex-direction: column;
+        height: 96%;
+        gap: 4%;
+        width: 24%;
+        background-color: white;
+        border-radius: 15px;
+      }
+      .contents h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 110px;
+        width: 100%;
+        color: white;
+        background-color: #7aa770;
+        font-size: 28px;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+      }
+      .contents p {
+        padding: 5% 4% 2% 4%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 85%;
+        font-size: 11px;
+        font-weight: 100;
+        color: rgb(99, 99, 99);
+        text-align: justify;
+      }
+      .contents button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2% 2%;
+        width: 80%;
+        color: white;
+        border-radius: 30px;
+        background-color: #7ccf81;
+        margin-left: 15px;
+        margin-bottom: 20px;
+        border: none;
+      }
+      footer {
+        margin-top: 2%;
+        display: flex;
+        flex-direction: row;
+        gap: 3%;
+      }
+      footer .part1 {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        border-right: 2px solid #569563;
+      }
+      .part1 h1 {
+        color: white;
+        font-size: 27px;
+        font-weight: bolder;
+      }
+      .part1 h4 {
+        color: white;
+        font-size: 20px;
+        font-weight: 400;
+        padding-bottom: 3%;
+      }
+      .part1 p {
+        padding: 2% 3%;
+        font-size: 11px;
+        width: 80%;
+        font-weight: 100;
+        color: rgb(188, 188, 188);
+        text-align: justify;
+      }
+      .part1 button {
+        margin-top: 6%;
+
+        padding: 2% 2%;
+        width: 50%;
+        color: white;
+        border-radius: 30px;
+        background-color: #7ccf81;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="nav1">
+          <h2>MY PORTFOLIO</h2>
+          <h3>MY PORTFOLIO</h3>
+          <h5>WEB DEVELOPER</h5>
+          <button>HOME</button>
+        </div>
+        <div class="nav2">
+          <h1>
+            MY PORTFOLIO <br />
+            - WEB DEVELOPER
+          </h1>
+        </div>
+        <div class="nav3">
+          <a href="">HOME</a>
+          <a href="">ABOUT</a>
+          <button>CONTACT</button>
+        </div>
+      </nav>
+      <div class="content">
+        <div class="contents">
+          <h1>HOME</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores
+            facere deserunt voluptatum,
+          </p>
+          <button>More</button>
+        </div>
+        <div class="contents">
+          <h1>Projects</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores
+            facere deserunt voluptatum,
+          </p>
+          <button>More</button>
+        </div>
+        <div class="contents">
+          <h1>Skills</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores
+            facere deserunt voluptatum,
+          </p>
+          <button>More</button>
+        </div>
+        <div class="contents">
+          <h1>Skills</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores
+            facere deserunt voluptatum,
+          </p>
+          <button>More</button>
+        </div>
+      </div>
+      <footer>
+        <div class="part1">
+          <h1>HOME</h1>
+          <h4>WEB DEVELOPER</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit
+            quod eaque recusandae, totam dolorum officiis!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam,
+            praesentium.
+          </p>
+          <button>Contact</button>
+        </div>
+        <div class="part1">
+          <h1>HOME</h1>
+          <h4>WEB DEVELOPER</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit
+            quod eaque recusandae, totam dolorum officiis!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam,
+            praesentium.
+          </p>
+          <button>Contact</button>
+        </div>
+        <div class="part1" style="border: none !important">
+          <h1>HOME</h1>
+          <h4>WEB DEVELOPER</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit
+            quod eaque recusandae, totam dolorum officiis!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam,
+            praesentium.
+          </p>
+          <button>Contact</button>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
