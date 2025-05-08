@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@535&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Winky Sans", sans-serif;
+        box-sizing: border-box;
+        background-color: #908f87;
+      }
+      .container {
+        width: 88%;
+        background-color: #3e3d38;
+        height: 95%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2%;
+        box-sizing: border-box;
+        border-radius: 30px;
+        box-shadow:
+          0 29px 52px rgba(0, 0, 0, 0.4),
+          0 25px 16px rgba(0, 0, 0, 0.2);
+      }
+      nav {
+        width: 100%;
+        height: 10%;
+        background-color: #343230;
+        display: flex;
+        flex-direction: row;
+        gap: 5%;
+        padding: 1% 7%;
+        box-sizing: border-box;
+        color: white;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+      }
+      .nav1 {
+        display: flex;
+        flex-direction: row;
+        gap: 15%;
+        width: 40%;
+      }
+      .nav1 h3 {
+        font-size: 25px;
+        font-weight: 800;
+      }
+      .nav2 {
+        display: flex;
+        flex-direction: row;
+        gap: 25%;
+      }
+      .nav2 a {
+        font-size: 25px;
+        font-weight: 800;
+        text-decoration: none;
+        color: white;
+      }
+      .nav2 button {
+        padding: 1.5% 10%;
+        font-weight: 600;
+
+        font-size: 20px;
+        color: white;
+        background-color: #8cb481;
+        border-radius: 30px;
+        border: none;
+      }
+      .content {
+        display: flex;
+        flex-direction: row;
+        color: white;
+      }
+      .contents {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+
+        width: 60%;
+        white-space: nowrap;
+      }
+      .contents h1 {
+        font-weight: 600;
+
+        font-size: 57px;
+        color: white;
+      }
+      .contents h2 {
+        font-weight: 500;
+        padding: 2% 0;
+        font-size: 27px;
+        color: white;
+      }
+      .contents span {
+        height: 12px;
+        margin: 2%;
+        width: 160%;
+        background-color: #637d56;
+        border-radius: 40px;
+      }
+      .contents button {
+        color: white;
+        width: 150%;
+        background-color: #8cb481;
+        border-radius: 35px;
+        border: none;
+        padding: 4% 25%;
+        font-weight: 600;
+        margin: 2% 0 1% 0;
+        margin-left: 7%;
+        font-size: 27px;
+      }
+      footer {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 2%;
+        padding: 0% 4%;
+        color: white;
+      }
+      .footers {
+        width: 22%;
+
+        border-right: 2px solid #4a6341;
+      }
+      .footers h2 {
+        padding: 3% 0;
+        text-align: center;
+        font-size: 35px;
+        font-weight: bolder;
+      }
+      .footers p {
+        padding: 3% 0;
+        width: 80%;
+        margin-left: 4%;
+        text-align: center;
+        font-size: 9px;
+        font-weight: 200;
+        color: white;
+        text-align: justify;
+      }
+      .footers img {
+        width: 70%;
+        height: 100px;
+        margin-left: 34px;
+      }
+      .footers button {
+        width: 70%;
+        padding: 3% 0;
+        margin-left: 35px;
+        font-size: 20px;
+        color: white;
+        background-color: #4a6341;
+        border-radius: 30px;
+        border: none;
+      }
+      .absolute {
+        height: 300px;
+        width: 360px;
+        position: absolute;
+        top: 110px;
+      }
+      .absolute1 {
+        left: 120px;
+      }
+      .absolute2 {
+        right: 120px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="nav1">
+          <h3>HELPING HANDS</h3>
+          <h3>FOUNDATION</h3>
+        </div>
+        <div class="nav2">
+          <a href="">HOME</a>
+          <a href="">ABOUT</a>
+          <a href="">CONTACT</a>
+          <button>DONATE</button>
+        </div>
+      </nav>
+      <div class="content">
+        <img class="absolute absolute1" src="content 1.jpg" alt="" srcset="" />
+        <div class="contents">
+          <h1>HELPING HANDS</h1>
+          <h2>MAKING A DIFFERENCE AT A TIME</h2>
+          <span></span><span></span><span></span>
+          <h2>MAKING A DIFFERENCE AT A TIME</h2>
+          <button>DONATE NOW</button>
+        </div>
+        <img class="absolute absolute2" src="content 2.jpg" alt="" srcset="" />
+      </div>
+      <footer>
+        <div class="footers" style="border-left: 2px solid #4a6341">
+          <h2>ABOUT US</h2>
+          <img src="footer 1.jpg" alt="" srcset="" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+            recusandae voluptates
+          </p>
+          <button>DONATE</button>
+        </div>
+        <div class="footers">
+          <h2>ABOUT US</h2>
+          <img src="footer 2.jpg" alt="" srcset="" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+            recusandae voluptates
+          </p>
+          <button>DONATE</button>
+        </div>
+        <div class="footers">
+          <h2>ABOUT US</h2>
+          <img src="footer 1.jpg" alt="" srcset="" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+            recusandae voluptates
+          </p>
+          <button>DONATE</button>
+        </div>
+        <div class="footers">
+          <h2>ABOUT US</h2>
+          <img src="footer 2.jpg" alt="" srcset="" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+            recusandae voluptates
+          </p>
+          <button>DONATE</button>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
