@@ -3,7 +3,302 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@535&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Winky Sans", sans-serif;
+        box-sizing: border-box;
+        background-color: #8fa982;
+      }
+      .container {
+        height: 95%;
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        background-color: #333233;
+      }
+      nav {
+        height: 20%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 1% 2%;
+        gap: 1%;
+      }
+      .nav1 {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+      }
+      .nav1 h2 {
+        text-align: center;
+        font-size: 33px;
+        font-weight: 500;
+      }
+      .nav1 h3 {
+        text-align: center;
+        font-size: 25px;
+        font-weight: 400;
+      }
+      .nav1 h5 {
+        text-align: center;
+        font-size: 19px;
+        font-weight: 200;
+      }
+      .nav1 button {
+        padding: 2% 8%;
+        width: 45%;
+        font-size: 22px;
+        font-weight: 500;
+        color: white;
+        background-color: #73a975;
+        border: none;
+        border-radius: 30px;
+        margin-left: 70px;
+        margin-top: 2%;
+      }
+      .nav2 {
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+      }
+      .nav2 h1 {
+        font-size: 45px;
+        font-weight: 800;
+        text-align: center;
+      }
+      .nav2 h2 {
+        font-size: 34px;
+        font-weight: 700;
+        text-align: center;
+      }
+      .nav3 {
+        display: flex;
+        flex-direction: row;
+        gap: 15%;
+        justify-content: space-evenly;
+      }
+      .nav3 a {
+        padding-top: 12%;
+        text-decoration: none;
+        color: white;
+        font-size: 28px;
+        font-weight: 700;
+      }
+      .nav3 button {
+        margin-top: 10%;
+        height: 35%;
+        padding: 1% 6%;
+        width: 80% !important;
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+        border-radius: 30px;
+        border: none;
+        background-color: #73da93;
+      }
+      .content {
+        padding: 2% 2%;
+        display: flex;
+        flex-direction: row;
+        gap: 2.5%;
+
+        width: 100%;
+      }
+      .contents {
+        width: 22%;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 0 0 2% 0;
+        border-radius: 15px;
+      }
+      .contents h1 {
+        padding-top: 1%;
+        font-size: 40px;
+        font-weight: 800;
+        text-align: center;
+        color: white;
+        height: 85px;
+        background-color: #7ea974;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+      }
+      .contents p {
+        padding: 5% 2% 3% 8%;
+        font-size: 13px;
+        font-weight: 300;
+        color: #4f4f4f;
+      }
+      .contents button {
+        margin-top: 10%;
+        height: 18%;
+        padding: 1% 6%;
+        width: 65% !important;
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+        border-radius: 30px;
+        border: none;
+        background-color: #73da93;
+        margin-left: 45px;
+      }
+      footer {
+        padding: 1% 5%;
+        display: flex;
+        flex-direction: row;
+        gap: 2.5%;
+        width: 100%;
+      }
+      .footers {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        border-right: 2px solid #73a975;
+        color: white;
+      }
+      .footers h2 {
+        padding: 1% 0%;
+        font-size: 22px;
+        font-weight: 800;
+      }
+      .footers h5 {
+        padding: 2% 0%;
+        font-size: 18px;
+        font-weight: 500;
+      }
+      .footers p {
+        padding: 1.5% 2% 1.5% 2%;
+        width: 80%;
+        font-size: 12px;
+        font-weight: 200;
+      }
+      .footers button {
+        margin-top: 3%;
+        height: 18%;
+        padding: 1% 6%;
+        width: 50% !important;
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+        border-radius: 30px;
+        border: none;
+        background-color: #73da93;
+        margin-left: 45px;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="nav1">
+          <h2>MY PORTFOLIO</h2>
+          <h3>MY PORTFOLIO</h3>
+          <h5>WEB DEVELOPER</h5>
+          <button>HOME</button>
+        </div>
+        <div class="nav2">
+          <h1>MY PORTFOLIO</h1>
+          <h2>- WEB DEVELOPER</h2>
+        </div>
+        <div class="nav3">
+          <a href="">HOME</a>
+          <a href="">ABOUT</a>
+          <button>CONTACT</button>
+        </div>
+      </nav>
+      <div class="content">
+        <div class="contents">
+          <h1>HOME</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique
+            et voluptatibus maiores iusto incidunt nulla?
+          </p>
+          <button>HOME</button>
+        </div>
+        <div class="contents">
+          <h1>HOME</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique
+            et voluptatibus maiores iusto incidunt nulla?
+          </p>
+          <button>HOME</button>
+        </div>
+        <div class="contents">
+          <h1>HOME</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique
+            et voluptatibus maiores iusto incidunt nulla?
+          </p>
+          <button>HOME</button>
+        </div>
+        <div class="contents">
+          <h1>HOME</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique
+            et voluptatibus maiores iusto incidunt nulla?
+          </p>
+          <button>HOME</button>
+        </div>
+      </div>
+      <footer>
+        <div class="footers">
+          <h2>HOME</h2>
+          <h5>WEB DEVELOPER</h5>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque,
+            magnam.
+          </p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque,
+            magnam.
+          </p>
+          <button>Contact</button>
+        </div>
+        <div class="footers">
+          <h2>HOME</h2>
+          <h5>WEB DEVELOPER</h5>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque,
+            magnam.
+          </p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque,
+            magnam.
+          </p>
+          <button>Contact</button>
+        </div>
+        <div class="footers" style="border: none !important">
+          <h2>HOME</h2>
+          <h5>WEB DEVELOPER</h5>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque,
+            magnam.
+          </p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque,
+            magnam.
+          </p>
+          <button>Contact</button>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
