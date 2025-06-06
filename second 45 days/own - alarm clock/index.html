@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(195, 195, 195);
+        font-family: "Technology Bold", sans-serif;
+      }
+      .container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .clock {
+        background-color: black;
+        border: 2px solid rgb(255, 255, 255);
+        outline: 2px solid rgb(212, 212, 212);
+        outline-offset: 6px;
+        outline-color: rgb(255, 255, 255);
+        height: 40%;
+        width: 55%;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .clock h1 {
+        color: #e9e9e9;
+        font-size: 120px;
+      }
+
+      @font-face {
+        font-family: "Technology Bold";
+        src: url("fonts/Technology-Bold.ttf") format("truetype");
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="clock">
+        <h1></h1>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
