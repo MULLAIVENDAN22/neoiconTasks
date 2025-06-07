@@ -28,16 +28,32 @@
         outline: 2px solid rgb(212, 212, 212);
         outline-offset: 6px;
         outline-color: rgb(255, 255, 255);
-        height: 40%;
+        height: 45%;
         width: 55%;
         border-radius: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
+        gap: 10%;
       }
       .clock h1 {
         color: #e9e9e9;
         font-size: 120px;
+      }
+      .clock button {
+        width: 30%;
+        background-color: inherit;
+        border: 3.5px solid rgb(255, 255, 255);
+        font-size: 35px;
+        padding: 2% 2%;
+        border-radius: 30px;
+        color: #e9e9e9;
+        font-weight: 700;
+        cursor: pointer;
+      }
+      .clock button:hover {
+        transform: scale(0.95);
       }
 
       @font-face {
@@ -51,6 +67,7 @@
     <div class="container">
       <div class="clock">
         <h1></h1>
+        <button id="btn" onclick=setAlarm()>Set alarm</button>
       </div>
     </div>
     <script src="script.js"></script>
