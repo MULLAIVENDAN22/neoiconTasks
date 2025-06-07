@@ -21,7 +21,7 @@ setInterval(() => {
       if (issnooze) {
         if(Number(value[1]) > 55){
           value [0] = ((Number(value[0])++) % 12 || 12).toString()
-          value [1] = (value[1] % 5 - 1).toString()
+          value [1] = (value[1] % 5).toString()
         }
         else{
           value [1] = (Number(value[1]) + 5).toString()
