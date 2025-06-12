@@ -238,11 +238,160 @@ Set.prototype.difference = function (otherset) {
 //   console.log("hello");
 // }();
 
-const array = [1,2,3,4];        
+// --------------------------------------------
 
-console.log(array);
+/*
+const promise = new Promise((res, rej) => {
+  let a = 10 + 10;
+  if (a == 20) res();
+  else rej();
+});
 
-    
-console.log(array);
+promise.then(() => console.log("resolve")).catch(() => console.log("reject"));
+
+function settimoutPromise(duration) {
+  return new Promise((resolve, reject) => {
+    setTimeout(resolve, duration);
+  });
+}
+
+settimoutPromise(2000)
+  .then(() => {
+    console.log("number 1");
+    return settimoutPromise(3000);
+  })
+  .then(() => {
+    console.log("number 2");
+    return settimoutPromise(3000);
+  })
+  .then(() => {
+    console.log("number 3");
+    return settimoutPromise(4000);
+  })
+  .then(() => {
+    console.log("number 4");
+  })
+  .catch(() => console.log("no number"));
+
+  console.log("i am inevitable");
+*/
+
+//---------------------------------------------
+
+/*
+const results = (marks) => {
+  return new Promise((resolve, reject) => {
+    let total = 0,
+      result = "pass";
+    marks.forEach((mark) => {
+      total += mark;
+      if (mark < 50) {
+        result = "fail";
+      }
+    });
+    resolve({ total: total, result: result });
+  });
+};
+
+const grades = (total) => {
+  return new Promise((resolve, reject) => {
+    if (total.result == "fail") {
+      reject("fail no grade");
+      return;
+    }
+    let finall = total.total;
+    finall /= 3;
+    console.log(finall);
+    let grade =
+      finall > 90
+        ? "A"
+        : finall > 80
+          ? "B"
+          : finall > 70
+            ? "C"
+            : finalll > 60
+              ? "D"
+              : "E";
+    resolve(grade);
+  });
+};
+
+*/
+
+/*
+result([80, 90, 40])
+  .then((result) => {
+    console.log("total ", result.total);
+    console.log("result ", result.result);
+    return grade(result);
+  })
+  .then((grade) => {
+    console.log("grade ", grade);
+  })
+  .catch((err) => {
+    console.error("fail", err);
+  });
+  */
+
+/*
+  
+async function exam(marks) {
+  try {
+    let result = await results(marks);
+    console.log("total ", result.total);
+    console.log("result ", result.result);
+    let grade = await grades(result);
+    console.log("grade ", grade);
+  } catch (error) {
+    console.error(error);
+  }
+}
 
 
+exam([80, 90, 90])
+
+*/
+
+//---------------------------------------------
+
+/*
+//DEBOUNCING
+//<input id="txt" type="text" data-uppercase>
+
+const button = document.getElementById("btn");
+const text = document.getElementById("txt");
+let count = 0;
+let timer;
+text.addEventListener("input", (e) => {
+  if(e.target.dataset.uppercase != undefined){
+    e.target.value = e.target.value.toUpperCase()
+  }
+  console.log("count ", count++);
+
+  mainFunction(e,1000);
+});
+
+function mainFunction(e, delay = 3000) {
+  clearTimeout(timer);
+  timer = setTimeout(() => {
+    console.log(e.target.value);
+    console.log(delay);
+  }, delay);
+}
+
+*/
+
+//---------------------------------------------
+
+let pname = "iphone",pprice = 50000,tax = 2000;
+console.log("product name ",pname);
+console.log("price incl tax ",pprice+tax);
+
+let fname = "Apple", fprice = 200;
+const total = (count)=>{
+ let total = fprice*count;
+  return [total,count]
+}
+let mtotal = total(5)
+console.log("fruit name ",fname);
+console.log(`for ${mtotal[1]} of apple the price is ${mtotal[0]}`);
