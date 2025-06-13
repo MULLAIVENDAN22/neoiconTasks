@@ -10,6 +10,9 @@ btn.addEventListener("click", () => {
 });
 
 window.addEventListener("DOMContentLoaded", () => {
+  if (!window.localStorage.getItem("theme"))
+    window.localStorage.setItem("theme", "light");
+
   theme = window.localStorage.getItem("theme");
   if (theme === "dark") {
     container.classList.add("dark");
