@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@535&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        font-family: "Winky Sans", sans-serif;
+        background-color: rgb(47, 47, 47);
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+      }
+      .container {
+        padding: 2%;
+        color: rgb(78, 229, 114);
+        margin-bottom: 1%;
+      }
+      .container * {
+        margin: 1%;
+      }
+      .container h1 {
+        font-size: 45px;
+        color: rgb(213, 210, 210);
+      }
+      .container p {
+        font-size: 25px;
+        font-weight: 700;
+      }
+      .container button {
+        height: 40px;
+        width: 120px;
+        font-weight: 700;
+        font-size: 18px;
+        color: white;
+        border: none;
+        border-radius: 10px;
+         background-color: rgb(209, 30, 179);
+      }
+      .btn button {
+        height: 35px;
+        width: 120px;
+        font-weight: 700;
+        font-size: 18px;
+        color: white;
+        border: none;
+        border-radius: 10px;
+       
+      }
+      .edit_button {
+        background-color: rgb(63, 205, 74);
+      }
+      .delete_button {
+        background-color: rgb(218, 53, 53);
+      }
+      .details {
+        padding: 2% 4%;
+        background-color: rgb(211, 211, 211);
+        margin: 2%;
+        width: 85%;
+        height: 40%;
+        overflow-y: scroll;
+        align-self: center;
+      }
+      .details ul li {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 1%;
+      }
+      .names{
+        font-size: 30px;
+        font-weight: 700;
+      }
+      .btn{
+        display: flex;
+        flex-direction: row;
+        gap: 15%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>simple crud operation in local storage with a input</h1>
+      <p>welcome to crud function using local storage</p>
+      <button id="add_button">Add</button>
+    </div>
+    <div class="details">
+      <ul id="list">
+        <!-- <li>
+          <div class="names">ram</div>
+          <div class="btn">
+            <button class="edit_button">Edit</button
+            ><button class="delete_button">Delete</button>
+          </div>
+        </li> -->
+      </ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
