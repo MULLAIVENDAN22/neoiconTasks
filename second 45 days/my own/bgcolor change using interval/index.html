@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        const body = document.querySelector("body")
+        const color = ["red","brown","orange","green","voilet","pink","blue"]
+        let ind = 0
+        setInterval(() => {
+            body.style.backgroundColor = color[ind++] || "black"
+            ind = ind > color.length - 1? 0 : ind
+        }, 1000);
+    </script>
+</body>
+</html>

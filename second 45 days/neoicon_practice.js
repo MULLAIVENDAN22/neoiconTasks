@@ -55,3 +55,67 @@ console.log(removepoint());
 */
 
 //-------------------------------------------------------
+
+// NEOICON CLASS PRACTICE 03
+
+/*
+// A product costs $49.99 and the user wants to buy 3 items. How would you calculate the total price?
+
+const totalPrice = (totalItem, productPrice = 49.99) =>{
+  return totalItem * productPrice
+}
+
+console.log(totalPrice(3));
+
+*/
+
+/*
+
+// total quantity
+const totalQuantity = function (...args){
+  return args.reduce((acc,current)=>{
+    return acc+current
+  },0)
+}
+
+console.log(totalQuantity(3,4,5,6));
+*/
+
+//-------------------------------------------------------
+
+// NEOICON CLASS PRACTICE 04
+
+/*
+// function
+
+function favourate(actor, player, movie, game) {
+  console.log(actor);
+  console.log(player);
+  console.log(movie);
+  console.log(game);
+}
+favourate("Tom Cruse", "Ms Dhoni", "IP Man 4", "Black Myth Wukong");
+*/
+
+/*
+//function inside function
+
+function multiple() {
+  console.log("multiple function gets excuted");
+
+  function left() {
+    console.log("left function gets excuted");
+  }
+
+  function right() {
+    console.log("right function gets excuted");
+  }
+
+  return { left, right };
+}
+
+multiple();
+multiple().left();
+multiple().right();
+
+*/
