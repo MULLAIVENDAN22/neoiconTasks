@@ -119,3 +119,22 @@ multiple().left();
 multiple().right();
 
 */
+
+//-------------------------------------------------------
+
+// NEOICON CLASS PRACTICE 05
+
+/*
+// .Login Attempt Limiter, Use if-else to simulate this login attempt logic.
+
+let login_count = 5
+let login_limit = 10
+if(login_count > login_limit)
+  console.log("login count reached");
+else
+  console.log("login count is below limit");
+  
+*/
+
+//login checking using prompt
+
