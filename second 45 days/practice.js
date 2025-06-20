@@ -422,6 +422,8 @@ for (let index = 1; index <= count; index++) {
 //forEach - (value,index,array)  - return value or statement
 // - printing item (for loop)
 // - orginal array
+
+/*
 let array;
 
 const users = [
@@ -444,3 +446,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   console.log(dummyarray);
   window.localStorage.setItem("users", JSON.stringify(dummyarray));
 });
+
+*/
+
+//---------------------------------------------

@@ -125,6 +125,7 @@ multiple().right();
 // NEOICON CLASS PRACTICE 05
 
 /*
+
 // .Login Attempt Limiter, Use if-else to simulate this login attempt logic.
 
 let login_count = 5
@@ -136,5 +137,157 @@ else
   
 */
 
+/*
 //login checking using prompt
+
+let text = prompt("Enter Your Name");
+let password = prompt("Enter Your Password");
+let obj = { username: "mullai", Pass: 2222 };
+
+if (obj.username == text && obj.Pass == password) {
+  alert("User found");
+} else {
+  alert("no such user exist");
+}
+
+*/
+
+// //-------------------------------------------------------
+
+// // NEOICON CLASS PRACTICE 06
+
+// /*
+// //Print all prime numbers from 1 to 50
+// const primeNo = (from, to) => {
+//   for (let i = from; i <= to; i++) {
+//     let count = 0;
+//     for (let j = 2; j <= i; j++) {
+//       if (i % j == 0) {
+//         ++count;
+//         if (count > 1) break;
+//       }
+//     }
+//     if (count == 1) console.log(i);
+//   }
+// };
+
+// primeNo(1, 50);
+// */
+
+// /*
+// //Find the sum of prime numbers between 1 to 100
+
+// const primeSum = (from, to) => {
+//   let total = 0;
+//   for (let i = from; i <= to; i++) {
+//     let count = 0;
+//     for (let j = 2; j <= i; j++) {
+//       if (i % j == 0) {
+//         ++count;
+//         if (count > 1) break;
+//       }
+//     }
+//     if (count <= 1) total += i;
+//   }
+//   return total;
+// };
+
+// console.log(primeSum(1, 100));
+// */
+
+// /*
+// // Count the number of digits in a number
+
+// const sumOfDigits = (num) => {
+//   let total = 0;
+//   let string = String(num);
+//   for (let i = 0; i < string.length; i++) {
+//     total += Number(string.charAt(i));
+//   }
+//   return total;
+// };
+// console.log(sumOfDigits(12345));
+
+// //other  method
+
+// const sumOfDigits = (num) => {
+//   let total = 0;
+
+//   return String(num).split('').reduce((acc,current)=> {return acc+Number(current)},0);
+// };
+// console.log(sumOfDigits(12345));
+
+// //other  method
+
+// const sumOfDigits = (num) => {
+//   let total = 0;
+//   while (num > 0) {
+//     total += num % 10;
+//     num = Math.trunc(num / 10);
+//   }
+//   return total;
+// };
+// console.log(sumOfDigits(12345));
+
+// */
+
+// //-------------------------------------------------------
+
+// // NEOICON TEST 01    20/6/2025
+
+// // Write a program to generate the Fibonacci series up to n terms using for loop.
+
+// const fibonacciSeries = (n) => {
+//   let a = -1,
+//     b = 1,
+//     c
+//   for (let index = 1; index <= n; index++) {
+//     c = a+b
+//     console.log(c);
+//     a = b
+//     b = c
+//   }
+// };
+// fibonacciSeries(10);
+
+// // Create a program that takes marks as input and displays the grade using if-else if-else:
+// // •	90+ = A
+// // •	75–89 = B
+// // •	60–74 = C
+// // •	<60 = Fail
+
+// const grade = (marks) => {
+//   return marks >= 90 ? "A" : marks >= 75 ? "B" : marks >= 60 ? "C" : "FAIL";
+// };
+// console.log(grade);
+
+// // .Create a function that accepts two numbers and an operator (+, -, *, /) and returns the result.
+
+// const add = (a,b) => {
+//   return a + b;
+// };
+// const sub = (a,b) => {
+//   return a - b;
+// };
+// const multiply = (a,b) => {
+//   return a * b;
+// };
+// const divide = (a,b) => {
+//   return a / b;
+// };
+
+// console.log(add(10, 20), sub(50, 30), multiply(5, 10), divide(100, 2));
+
+// function operation(a, b, name) {
+//   let total = "error";
+//   const addition = () => {
+//     total = a + b;
+//   };
+//   const sub = () => {
+//     total = a - b;
+//   };
+//   name == "add" ? addition() : name == "sub" ? sub() : "nothing";
+//   return total;
+// }
+// console.log(operation(30, 20, "sub"));
 
