@@ -1,12 +1,5 @@
 const tbody = document.querySelector("tbody");
-let users = [
-  { name: "Sam", age: 15, city: "Chennai", salary: 10500 },
-  { name: "Ravi", age: 22, city: "Namakkal", salary: 12000 },
-  { name: "Joes", age: 18, city: "Hosur", salary: 6000 },
-  { name: "Aureen", age: 47, city: "Dharmapuri", salary: 10000 },
-  { name: "aravind", age: 10, city: "Salem", salary: 8000 },
-  { name: "Ram", age: 12, city: "Salem", salary: 10000 },
-];
+let users = 
 
 // window.localStorage.setItem("CRUD-users",JSON.stringify(users))
 
