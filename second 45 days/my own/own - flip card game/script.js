@@ -61,11 +61,13 @@ function match(first, second) {
       randomFruit[second - 1],
       " are correct"
     );
-    score.innerHTML = `score : ${++points}`;
-    if (points === 24) won();
+    score.innerHTML = `score : ${++points}/12`;
+    console.log("points : ", points);
+    
+    if (points === 12) won();
   } else {
     console.log(randomFruit[first - 1], randomFruit[second - 1], " are wrong");
-    life.innerHTML = `life : ${--remainingLife}`;
+    life.innerHTML = `life : ${--remainingLife}/10`;
     if (remainingLife < 1) loose();
     card1.classList.remove("clickEvents");
     card1.children[0].classList.toggle("hide");
