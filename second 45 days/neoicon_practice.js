@@ -536,3 +536,66 @@ let months = (date) =>{
 console.log(months(dates));
 
 */
+
+//-------------------------------------------------------
+
+// NEOICON CLASS PRACTICE 12
+
+/*
+
+// Write a JavaScript program that: Stores an array of 5 student names.Uses a for loop to write each name into
+// a file named students.txt, one per line.After writing, read the file and display the content in the console
+
+// Declares a student's name and marks as variables. Create a function checkResult(marks) that: Returns a Promise. If marks
+// are >= 40, the promise resolves with the message: If marks are below 40, the promise rejects with: Use .then()
+// and .catch() to handle the promise result. Do not use async/await.
+
+const students = [
+  { name: "jeagan", mark: 70 },
+  { name: "mullai", mark: 80 },
+  { name: "dani", mark: 90 },
+  { name: "arul", mark: 100 },
+  { name: "vignesh", mark: 30 },
+];
+
+function checkResult(element) {
+  let promise = new Promise((res, rej) => {
+    if (element.mark >= 40) {
+      res(element);
+    } else {
+      rej(element);
+    }
+  });
+  return promise;
+}
+
+function passingStudent(student) {
+  student.forEach((element) => {
+    checkResult(element)
+      .then((data) => {
+        console.log(
+          "name : ",
+          data.name,
+          "mark : ",
+          data.mark,
+          " result : ",
+          "passed"
+        );
+      })
+      .catch((data) => {
+        console.log(
+          "name : ",
+          data.name,
+          "mark : ",
+          data.mark,
+          " result : ",
+          "failed"
+        );
+      });
+  });
+}
+
+passingStudent(students)
+
+*/
+
