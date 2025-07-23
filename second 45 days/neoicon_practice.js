@@ -599,3 +599,112 @@ passingStudent(students)
 
 */
 
+//-------------------------------------------------------
+
+// NEOICON CLASS PRACTICE 13
+
+/*
+
+// const fetch = require('node-fetch');
+
+// fetch('https://dummyjson.com/products')
+//   .then(res => res.json())
+//   .then(data => console.log(data))
+//   .catch((err)=>{
+//     throw new Error("data not found",err);
+//   })
+
+// fetch('https://dummyjson.com/products')
+//   // .then(res => res.text())
+//   .then(res => res.json())
+//   .then(data => {
+//     // data = JSON.parse(data)
+//     data.products.forEach(element => {
+//       if ((element.title).toLowerCase() == "kiwi") {
+//         console.log(element);
+//       }
+//     });
+//   })
+//   .catch((err)=>{
+//     throw new Error("data not found",err);
+//   })
+
+// const obj1 = {
+//   name: "mullai",
+//   age: 24,
+//   eligiblity() {
+//     console.log(this.age >= 18 ? "eligible" : "not eligible");
+//   }
+// };
+
+// obj1.eligiblity()
+
+// You are building a small product search dashboard for an e-commerce site.
+// You need to:
+// Fetch a list of products from an API
+// Filter only products containing the keyword "laptop"
+// Sort them by price (low to high)
+// Show total count and names
+
+// fetch("https://dummyjson.com/c/b67d-3caa-4ed3-84f5")
+//   .then((res) => res.text())
+//   .then((data) => {
+//     data = JSON.parse(data);
+//     let count = 0;
+//     data.products.forEach((element) => {
+//       if (element.category == "laptop") {
+//         console.log(
+//           "product : ",
+//           element.name,
+//           "product price : ",
+//           element.price,
+//           "product catagory : ",
+//           element.category
+//         );
+//         ++count;
+//       }
+//     });
+//     console.log("total count : ", count);
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
+
+// function promise () {
+//   return new Promise((resolve, reject) => {
+//   if (10 - 2 == 8) {
+//     resolve("correct");
+//   } else {
+//     reject("wrong");
+//   }
+// });
+// }
+
+// promise()
+//   .then((data) => console.log(data))
+//   .catch((data) => console.log(data));
+
+
+*/
+
+//-------------------------------------------------------
+
+// NEOICON CLASS PRACTICE 12
+
+let count = 0;
+async function fetching() {
+  try {
+    const response = await fetch("https://dummyjson.com/c/b67d-3caa-4ed3-84f");
+    const data = await response.json();
+    console.log(data);
+  } catch (error) {
+    if (count < 3) {
+      ++count;
+      setTimeout(() => {
+        fetching();
+      }, 2000);
+      console.warn(`data fetch failed at attempt  ${count}`);
+    } else console.error(`all 3 attempt have taken`);
+  }
+}
+fetching();
