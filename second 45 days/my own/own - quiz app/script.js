@@ -95,7 +95,7 @@ const h2 = quiz.querySelector("h2");
 
 const option = quiz.querySelectorAll(".option");
 
-const previousbtn = document.querySelector(".previous");
+// const previousbtn = document.querySelector(".previous");
 const nextbtn = document.querySelector(".next");
 const submitbtn = document.querySelector(".submit");
 
@@ -120,7 +120,7 @@ nextbtn.addEventListener("click", () => {
   ) {
     return;
   }
-  previousbtn.classList.remove("hide");
+  // previousbtn.classList.remove("hide");
   if (currentAnswer.toLowerCase() == questions[count].answer.toLowerCase()) {
     console.log("correct ans ", currentAnswer);
     score++;
