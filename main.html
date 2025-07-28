@@ -1,17 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="shortcut icon" href="#" type="image/x-icon">
-</head>
-<body>
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="shortcut icon"
+      href="OIP-removebg-preview.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@535&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+         * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        font-family: "Winky Sans", sans-serif;
+        background: #2a2a2a;
+        box-sizing: border-box;
+        display: grid;
+        place-items: center;
+        box-sizing: border-box;
+      }
+        .parent{
+            height: 50%;
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            gap: 15%;
+            justify-content: center;
+            align-items: center;
+        }
+        input{
+            height: 40px;
+            border-radius: 20px;
+            background-color: rgb(217, 217, 217);
+            border: none;
+            font-size: 25px;
+            font-weight: 700;
+            padding-left: 50%;
+            box-sizing: border-box;
+        }
+        
+        button{
+            height: 40px;
+            width: 100px;
+            font-size: 20px;
+            font-weight: 700;
+            border-radius: 20px;
+            background-color: aqua;
+        }
+        .result{
+            height: 15%;
+            width: 20%;
+            background-color: rgb(122, 179, 160);
+            border-radius: 20px;
+            display: grid;
+            place-items: center;
+            text-align: center;
+            margin-left: 5px;
+            color: white;
+        }
+    </style>
+  </head>
+  <body>
     <div class="parent">
-        <div class="child1">content1</div>
-        <div class="child2">content2</div>
-        <div class="child3">content3</div>
+      <input id="first" type="number" />
+      <input id="second" type="number" />
+      <button class="addup">Add</button>
+      <div class="result"></div>
     </div>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>

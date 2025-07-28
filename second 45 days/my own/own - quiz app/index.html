@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="shortcut icon"
+      href="OIP-removebg-preview.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@535&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>MV Rockerz</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        font-family: "Winky Sans", sans-serif;
+        box-sizing: border-box;
+        background-color: rgb(224, 240, 248);
+        display: grid;
+        place-items: center;
+      }
+      .container {
+        padding: 1.5%;
+        height: 80%;
+        width: 60%;
+        background-color: rgb(255, 250, 250);
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 6%;
+      }
+      .timer {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .timer h1 {
+        font-size: 35px;
+        font-weight: 700;
+      }
+      .timer h3 {
+        font-size: 30px;
+        font-weight: 700;
+      }
+      .main {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%;
+      }
+      .main .questionNumber {
+        font-size: 35px;
+        font-weight: 700;
+        color: rgb(30, 66, 213);
+        cursor: pointer;
+      }
+      .main span {
+        cursor: pointer;
+        border-bottom: 3.5px solid rgb(30, 66, 213);
+        width: 40%;
+        margin-top: 0.5%;
+      }
+      .quiz {
+        margin-top: 3%;
+      }
+      .quiz h2 {
+        font-size: 27px;
+        font-weight: 700;
+        cursor: pointer;
+      }
+      .quiz .options {
+        margin-left: 5%;
+        width: 80%;
+        margin-top: 1%;
+      }
+      .quiz .options .option {
+        padding: 2%;
+        font-size: 20px;
+        font-weight: 600;
+        background-color: rgb(230, 230, 230);
+        width: 100%;
+        margin-top: 1.5%;
+        text-indent: 25px;
+        border-radius: 10px;
+        color: rgb(75, 75, 75);
+      }
+      .quiz .options .option:hover {
+        background-color: rgb(27, 57, 178);
+        color: white;
+        cursor: pointer;
+      }
+      .clicked {
+        color: rgb(255, 255, 255) !important;
+        background-color: rgb(30, 66, 213) !important;
+      }
+      .endButtons {
+        display: flex;
+        flex-direction: row;
+        width: 95%;
+        justify-content: center;
+        margin-top: 3%;
+      }
+      button {
+        color: rgb(255, 255, 255);
+        background-color: rgb(1, 58, 244);
+        font-size: 20px;
+        font-weight: 600;
+        height: 50px;
+        width: 130px;
+        border-radius: 10px;
+        border: none;
+      }
+      .hide {
+        visibility: hidden;
+      }
+      .fullHide {
+        display: none;
+      }
+      .submit {
+        background-color: rgb(242, 8, 94);
+      }
+      .menu {
+        padding: 1%;
+        height: 28%;
+        width: 30%;
+        background-color: rgb(247, 246, 246);
+        border: 3px solid rgb(232, 232, 232);
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        display: grid;
+        place-items: center;
+        text-align: center;
+      }
+      .menu h2 {
+        font-size: 28px;
+        font-weight: 700;
+        color: rgb(56, 56, 56);
+        padding: 3% 2%;
+      }
+      .menu button {
+        background-color: rgb(30, 66, 213);;
+        padding: 3% 5%;
+        border: none;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 30px;
+        color: white;
+      }
+      .final {
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        z-index: 5;
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(3px);
+        display: grid;
+        place-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fullHide msg1">
+      <div class="menu">
+        <h2 class="menuh2">
+          Lorem ipsum dolor sit amet consectetur adipisicing natus magnam
+          excepturi!
+        </h2>
+        <button onclick="location.reload();">Try again</button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="timer">
+        <h1>Time</h1>
+        <h3 class="timing">05 : 00</h3>
+      </div>
+      <div class="main">
+        <div class="questionNumber">Question 1</div>
+        <span></span>
+        <div class="quiz">
+          <h2>
+            Which organ in the human body is responsible for pumping blood?
+          </h2>
+          <div class="options">
+            <div class="option">william sheakesphere</div>
+            <div class="option">william sheakesphere</div>
+            <div class="option">william sheakesphere</div>
+            <div class="option">william sheakesphere</div>
+          </div>
+        </div>
+        <div class="endButtons">
+          <!-- <button class="hide previous">Previous</button> -->
+          <button class="next">Next</button>
+          <button class="fullHide submit">Submit</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
