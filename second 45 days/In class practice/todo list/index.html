@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="shortcut icon"
+      href="OIP-removebg-preview.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@535&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>MV Rockerz</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        font-family: "Winky Sans", sans-serif;
+        box-sizing: border-box;
+        background-color: rgb(235, 235, 235);
+        display: grid;
+        place-items: center;
+      }
+      .container {
+        padding: 1.2%;
+        height: 62%;
+        width: 50%;
+        background-color: rgb(255, 255, 255);
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6%;
+      }
+      .container h1 {
+        text-align: center;
+        font-size: 35px;
+        font-weight: 800;
+      }
+      .search {
+        display: flex;
+        flex-direction: row;
+        gap: 6%;
+        justify-content: center;
+      }
+      .search input {
+        padding: 1% 8%;
+        background-color: rgb(244, 244, 244);
+        border-radius: 10px;
+        box-sizing: border-box;
+        font-size: 17px;
+      }
+      .search button {
+        color: rgb(255, 255, 255);
+        background-color: rgb(1, 58, 244);
+        font-size: 20px;
+        font-weight: 600;
+        height: 50px;
+        width: 220px;
+        border-radius: 10px;
+        border: none;
+      }
+      .result {
+        width: 80%;
+        height: 60%;
+        background-color: rgb(234, 238, 241);
+        border-radius: 20px;
+        padding: 2% 4%;
+        overflow-y: scroll;
+        margin-bottom: 2%;
+        display: flex;
+        flex-direction: column;
+        gap: 3%;
+        box-sizing: border-box;
+      }
+      .list {
+         box-sizing: border-box;
+        width: 100%;
+        padding: 1%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .left{
+         box-sizing: border-box;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 4%;
+      }
+      .list .left span {
+        height: 15px;
+        width: 15px;
+        outline: 3px solid rgb(69, 69, 69);
+        border: none;
+        border-radius: 50%;
+        padding: 2px;
+      }
+      .list .left h3 {
+       font-size: 25px;
+        font-weight: 700;
+      }
+      img {
+        height: 30px;
+        width: 30px;
+      }
+      .text{
+        text-decoration: line-through;
+        color: rgb(140, 140, 140);
+      }
+      .circle{
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Todo List</h1>
+      <div class="search">
+        <input type="text" placeholder="Enter here" />
+        <button class="add">Add</button>
+      </div>
+      <div class="result">
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
