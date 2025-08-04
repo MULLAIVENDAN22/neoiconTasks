@@ -1197,8 +1197,21 @@ console.log(splitSpecifiedInArray([1, 2, 3, 4, 5, 6, 7], 3));
 */
 
 
+Hello()
+function Hello() {
+  console.log("hello"); 
+}
 
+hello2()
+const hello2 = function () {
+  console.log("hello2");
+  
+}
 
+hello3()
+const hello3 = () => {
+  console.log("hello2");
+}
 
 
 

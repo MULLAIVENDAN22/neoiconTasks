@@ -691,6 +691,7 @@ passingStudent(students)
 
 // NEOICON CLASS PRACTICE 12
 
+/*
 let count = 0;
 async function fetching() {
   try {
@@ -708,3 +709,47 @@ async function fetching() {
   }
 }
 fetching();
+*/
+
+//-------------------------------------------------------
+
+// NEOICON CLASS PRACTICE 13
+
+// In a team project, a teammate used var inside a loop, and the loop didn't behave as expected. What hoisting
+// issue might be responsible?
+
+// var a = 3;
+// for (var i = 0; i < 3; i++) {
+
+
+let a = 0;
+//   setTimeout(() => {
+//     console.log(i);
+//   }, 1000);
+// }
+
+function varadd() {
+  console.log("a ", a++);
+}
+
+function letadd() {
+  let b = 0;
+  console.log("b ", b++);
+}
+
+function var2add() {
+  var c = 0;
+  console.log("c ", c++);
+}
+
+varadd();
+letadd();
+var2add();
+
+varadd();
+letadd();
+var2add();
+
+varadd();
+letadd();
+var2add();

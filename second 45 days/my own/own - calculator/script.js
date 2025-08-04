@@ -50,6 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   input.addEventListener("input", (e) => {
     e.preventDefault()
+    e.target.value = ""
     // const cleaned = e.target.value.trim().replace(/\D/, "");
     // if (e.target.value !== cleaned) {
     //   e.target.value = cleaned;
