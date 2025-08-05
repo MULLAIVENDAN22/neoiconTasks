@@ -18,9 +18,16 @@
     />
     <title>Document</title>
     <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
       body {
+        width: 100vw;
+        height: 100vh;
         font-family: "JetBrains Mono", monospace;
         background-color: #1c1b22;
+        box-sizing: border-box;
       }
       nav {
         background-color: inherit;
@@ -55,7 +62,7 @@
       }
       .mainLast {
         display: flex;
-        gap: 25%;
+        gap: 20%;
         align-items: center;
         white-space: nowrap;
       }
@@ -63,14 +70,18 @@
         background-color: #05fd9b !important;
         color: black !important;
       }
+      /* .custom-container {
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
+      } */
     </style>
   </head>
   <body>
-    <div class="container">
+    <div class="container-fluid">
       <header>
-        <nav class="navbar navbar-dark py-4 px-3 navbar-expand-lg">
+        <nav class="navbar navbar-dark py-4 px-5 navbar-expand-lg">
           <a
-            class="navbar-brand fs-3 fw-bolder"
+            class="navbar-brand fs-1 fw-bolder ps-5" 
             data-aos="fade-down"
             data-aos-duration="7000"
             data-aos-delay="800"
@@ -84,7 +95,7 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="list fs-5 collapse navbar-collapse" id="collapseTarget">
+          <div class="list fs-4 collapse navbar-collapse pe-4" id="collapseTarget">
             <ul
               class="navbar-nav ms-auto fw-bold"
               data-aos="fade-down"
@@ -122,19 +133,23 @@
           </div>
         </nav>
       </header>
-      <div class="container main">
-        <div class="row">
+      <div class="container-fluid main">
+        <div class="row px-5">
           <div
-            class="col-lg-6 col-12 col-md-12 order-md-2 order-2 order-sm-1 order-lg-1"
+            class="col-lg-6 col-12 col-sm-12 col-md-12 order-md-2 order-2 order-sm-2 order-lg-1 px-5"
             data-aos="fade-right"
             data-aos-duration="7000"
             data-aos-delay="1500"
             data-aos-easing="linear"
           >
-            <h5 class="" style="color: #c3c3cd">Software Developer</h5>
-            <h1 class="pt-1" style="color: white">Hello I'm</h1>
-            <h1 class="pb-1" style="color: #05fd9b">MullaiVendan K</h1>
-            <p class="py-2" style="text-indent: 40px">
+            <h5 class="fs-4" style="color: #c3c3cd">Software Developer</h5>
+            <h1 class="pt-1" style="color: white; font-size: 50px">
+              Hello I'm
+            </h1>
+            <h1 class="pb-1" style="color: #05fd9b; font-size: 50px">
+              MullaiVendan K
+            </h1>
+            <p class="fs-5 py-2" style="text-indent: 50px">
               I am MULLAIVENDAN K, a passionate Frontend Developer with a strong
               foundation in <b>FrontEnd (HTML, CSS, JS, BootStrap)</b>. I enjoy
               building dynamic, user-friendly web applications, responsive
@@ -142,7 +157,7 @@
             </p>
             <div class="mainLast">
               <button
-                class="btn btn-outline-primary fs-4 fw-bolder py-2 px-4 downloadbtn"
+                class="btn btn-outline-primary fs-3 fw-bolder py-2 px-4 downloadbtn"
                 style="
                   border: 2px solid #05fd9b;
                   color: #05fd9b;
@@ -156,17 +171,27 @@
               <div>
                 <a style="text-decoration: none" href=""
                   ><img
-                    style="border: 2px solid #05fd9b; border-radius: 50%;"
-                    class="img-fluid p-1 me-4"
+                    style="
+                      border: 2px solid #05fd9b;
+                      border-radius: 50%;
+                      height: 65px;
+                      width: 65px;
+                    "
+                    class="img-fluid p-1 me-2"
                     src="https://img.icons8.com/?size=100&id=fmFqQmR0UdsR&format=png&color=05fd9b"
                     alt=""
                     srcset=""
                 /></a>
 
-                <a style="text-decoration: none" href=""
+                <a class="p-2" style="text-decoration: none" href=""
                   ><img
-                    style="border: 2px solid #05fd9b; border-radius: 50%"
-                    class="img-fluid p-1"
+                    style="
+                      border: 2px solid #05fd9b;
+                      border-radius: 50%;
+                      height: 65px;
+                      width: 65px;
+                    "
+                    class="img-fluid p-2"
                     src="https://img.icons8.com/?size=100&id=8808&format=png&color=05fd9b"
                     alt=""
                     srcset=""
@@ -175,7 +200,7 @@
             </div>
           </div>
           <div
-            class="col-lg-6 col-12 order-1 order-sm-2 order-lg-2 col-md-12 order-md-1"
+            class="col-lg-6 col-12 col-sm-12 col-md-12 order-1 order-sm-1 order-lg-2 order-md-1"
             data-aos="fade-left"
             data-aos-duration="7000"
             data-aos-delay="1500"
@@ -189,7 +214,7 @@
             />
           </div>
         </div>
-        <div class="row mt-5 mb-5 mb-lg-0 mb-md-0">
+        <div class="row py-3 mt-5 mb-5 mb-lg-0 mb-md-0">
           <div
             class="col-lg-3 col-12 pb-2 pb-lg-0 pb-md-0"
             data-aos="zoom-in"
@@ -197,28 +222,30 @@
             data-aos-delay="1900"
             style="text-align: center"
           >
-            <h1 class="p-2" style="color: white">1</h1>
-            <h6 style="color: #b8b8be">years of experience</h6>
+            <h1 class="p-2" style="color: white; font-size: 40px">1</h1>
+            <h6 style="color: #b8b8be; font-size: 18px">years of experience</h6>
           </div>
           <div
-            class="col-lg-3 col-12  pb-2 pb-lg-0 pb-md-0"
+            class="col-lg-3 col-12 pb-2 pb-lg-0 pb-md-0"
             data-aos="zoom-in"
             data-aos-duration="12000"
             data-aos-delay="2200"
             style="text-align: center"
           >
-            <h1 class="p-2" style="color: white">3</h1>
-            <h6 style="color: #b8b8be">Projects Worked</h6>
+            <h1 class="p-2" style="color: white; font-size: 40px">3</h1>
+            <h6 style="color: #b8b8be; font-size: 18px">Projects Worked</h6>
           </div>
           <div
-            class="col-lg-3 col-12  pb-2 pb-lg-0 pb-md-0"
+            class="col-lg-3 col-12 pb-2 pb-lg-0 pb-md-0"
             data-aos="zoom-in"
             data-aos-duration="12000"
             data-aos-delay="2500"
             style="text-align: center"
           >
-            <h1 class="p-2" style="color: white">4</h1>
-            <h6 style="color: #b8b8be">Technologies Mastered</h6>
+            <h1 class="p-2" style="color: white; font-size: 40px">4</h1>
+            <h6 style="color: #b8b8be; font-size: 18px">
+              Technologies Mastered
+            </h6>
           </div>
           <div
             class="col-lg-3 col-12 py-1"
@@ -227,8 +254,8 @@
             data-aos-delay="2800"
             style="text-align: center"
           >
-            <h1 class="p-2" style="color: white">200</h1>
-            <h6 style="color: #b8b8be">Code Commits</h6>
+            <h1 class="p-2" style="color: white; font-size: 40px">200</h1>
+            <h6 style="color: #b8b8be; font-size: 18px">Code Commits</h6>
           </div>
         </div>
       </div>
