@@ -72,3 +72,17 @@ setTimeout(() => {
     }, duration);
   }
 }, 2000);
+
+const homePage = document.querySelectorAll(".homePage");
+homePage.forEach((value) => {
+  value.addEventListener("click", () => {
+    const targetPage = "../index.html";
+    window.location.href = `./loading/loading.html?next=${encodeURIComponent(targetPage)}`;
+  });
+});
+
+const services = document.querySelector(".services");
+services.addEventListener("click", () => {
+  const targetPage = "../services/services.html";
+  window.location.href = `./loading/loading.html?next=${encodeURIComponent(targetPage)}`;
+});
