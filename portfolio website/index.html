@@ -33,10 +33,24 @@
       }
       body {
         /* width: 100vw;
-        height: 100vh; */
+              height: 100vh; */
         font-family: "JetBrains Mono", monospace;
         background-color: #1c1b22;
         box-sizing: border-box;
+        scrollbar-color: #05fd9b #8b8b94;
+      }
+      ::-webkit-scrollbar {
+        width: 5px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: #05fd9b;
+        border-radius: 30px;
+      }
+      ::-webkit-scrollbar-track {
+        background-color: #46464a;
+      }
+      ::-webkit-scrollbar-button {
+        background-color: #46464a;
       }
       nav {
         background-color: inherit;
@@ -142,7 +156,7 @@
                 <a class="nav-link lastbtn services">Services</a>
               </li>
               <li class="nav-item ms-3">
-                <a class="nav-link lastbtn">Resume</a>
+                <a class="nav-link lastbtn resume">Resume</a>
               </li>
               <li class="nav-item ms-3">
                 <a class="nav-link lastbtn">Work</a>
@@ -181,8 +195,10 @@
             >
               I'm a <b>full-stack web developer</b> skilled in crafting dynamic
               and responsive applications using
-              <b>HTML, CSS, JavaScript, Bootstrap, Node.js, and MongoDB</b>.
-              With experience in version control via <b>GitHub</b> and
+              <b
+                >HTML, CSS, JavaScript, Bootstrap, Node.js, Express.js and
+                MongoDB</b
+              >. With experience in version control via <b>GitHub</b> and
               deployment through <b> Vercel</b>, I deliver end-to-end solutions
               that are scalable, maintainable, and performance-driven.
             </p>

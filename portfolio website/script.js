@@ -86,3 +86,9 @@ services.addEventListener("click", () => {
   const targetPage = "../services/services.html";
   window.location.href = `./loading/loading.html?next=${encodeURIComponent(targetPage)}`;
 });
+
+const resume = document.querySelector(".resume");
+resume.addEventListener("click", () => {
+  const targetPage = "../resume/resume.html";
+  window.location.href = `./loading/loading.html?next=${encodeURIComponent(targetPage)}`;
+});

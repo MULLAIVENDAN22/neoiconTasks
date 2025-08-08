@@ -1,3 +1,17 @@
+const btn = document.querySelectorAll(".btnbuttons");
+const buttonClick = document.querySelectorAll(".buttonClick");
+
+for (let index = 0; index < 4; index++) {
+  btn[index].addEventListener("click", () => {
+    buttonClick.forEach((value, index2) => {
+      btn[index2].classList.remove("btncolor");
+      value.classList.add("d-none");
+    });
+    buttonClick[index].classList.remove("d-none");
+    btn[index].classList.add("btncolour")
+  });
+}
+
 const homePage = document.querySelectorAll(".homePage");
 homePage.forEach((value) => {
   value.addEventListener("click", () => {
@@ -8,12 +22,12 @@ homePage.forEach((value) => {
 
 const services = document.querySelector(".services");
 services.addEventListener("click", () => {
-  let targetPage = "services.html";
+  let targetPage = "../services/services.html";
   window.location.href = `../loading/loading.html?next=${encodeURIComponent(targetPage)}`;
 });
 
 const resume = document.querySelector(".resume");
 resume.addEventListener("click", () => {
-  let targetPage = "../resume/resume.html";
+  let targetPage = "resume.html";
   window.location.href = `../loading/loading.html?next=${encodeURIComponent(targetPage)}`;
 });

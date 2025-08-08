@@ -1,0 +1,692 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="../customized_bootstrap.css" />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        /* width: 100vw;
+        height: 100vh; */
+        font-family: "JetBrains Mono", monospace;
+        background-color: #1c1b22;
+        box-sizing: border-box;
+      }
+      body::-webkit-scrollbar {
+        width: 5px;
+      }
+      body::-webkit-scrollbar-thumb {
+        background-color: #05fd9b;
+        border-radius: 30px;
+      }
+      body::-webkit-scrollbar-track {
+        background-color: #46464a;
+      }
+      body::-webkit-scrollbar-button {
+        background-color: #46464a;
+      }
+      nav {
+        background-color: inherit;
+      }
+      a span {
+        background-color: #05fd9b;
+        height: 12px;
+        width: 12px;
+        border-radius: 50%;
+        display: inline-block;
+        margin-left: -10px;
+      }
+      ul li .lastbtn:hover {
+        color: #05fd9b;
+        text-decoration: underline;
+        text-underline-offset: 5px;
+      }
+      .newbtn {
+        color: black;
+        white-space: nowrap;
+        background-color: #05fd9b !important;
+        padding: 5px 20px !important;
+        border: none !important;
+        border-radius: 25px !important;
+        border: 2px solid #1c1b22 !important;
+      }
+      ul li .newbtn:hover {
+        color: #05fd9b !important;
+        background-color: #1c1b22 !important;
+        border: 2px solid #05fd9b !important;
+        text-decoration: none;
+      }
+      .main {
+        color: #8b8b94;
+        padding: 4% 6%;
+      }
+      p b {
+        color: #a9a9b1;
+        font-weight: 800;
+      }
+      a img {
+        height: 40px;
+        width: 40px;
+      }
+      .mainLast {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .downloadbtn:hover {
+        background-color: #05fd9b !important;
+        color: black !important;
+      }
+      .textAlign {
+        text-align: justify !important;
+        /* word-spacing: 0px !important; */
+        margin-left: -15%;
+        margin-right: -15%;
+      }
+      .arrow {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .mainArrow {
+        color: #1c1b22;
+        background-color: white;
+        padding: 16px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: rotate(135deg);
+        border-radius: 50%;
+        margin-top: -20px;
+      }
+      .arrow:hover .mainArrow {
+        transition: transform 0.7s ease;
+        transform: rotate(90deg);
+        background-color: #05fd9b;
+      }
+      .arrow:hover h2 {
+        color: #05fd9b;
+      }
+      .card {
+        background-color: #28272c;
+        color: white;
+        border-radius: 20px;
+      }
+      p {
+        color: #a9a9b1;
+      }
+      .firstDiv p {
+        /* font-size: 15px; */
+        text-align: justify;
+        text-indent: 20px;
+      }
+      .btncolor {
+        color: #1c1b22 !important;
+        background-color: #05fd9b !important;
+      }
+      .btnbuttons {
+        background-color: #28272c;
+      }
+      .btnbuttons:hover {
+        color: #1c1b22;
+        background-color: #05fd9b !important;
+      }
+      .btncolor:hover {
+        color: #1c1b22;
+        background-color: #05fd9b !important;
+      }
+      .card ul li {
+        list-style-type: disc;
+      }
+      .card ul li::marker {
+        color: #05fd9b;
+      }
+      .boxes::-webkit-scrollbar {
+        width: 5px;
+      }
+      .boxes::-webkit-scrollbar-thumb {
+        background-color: #05fd9b;
+        border-radius: 30px;
+      }
+      .boxes::-webkit-scrollbar-track {
+        background-color: #46464a;
+      }
+      .h-68 {
+        height: 68%;
+      }
+      .skills .card {
+        margin-top: 20px;
+      }
+      .skills .card:hover {
+        color: #05fd9b;
+      }
+      .tooltip {
+        --bs-tooltip-bg: rgb(255, 255, 255);
+        --bs-tooltip-color: black;
+      }
+      .part1 h4,
+      .part2 h4 {
+        font-size: 15px;
+        color: #aaaab3;
+        white-space: nowrap;
+      }
+      .part1 h2,
+      .part2 h2 {
+        font-size: 18px;
+        white-space: nowrap;
+      }
+      .skills .boxes .card {
+        flex-wrap: wrap;
+      }
+      /* data-aos-duration="7000"
+              data-aos-delay="1300" */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="navbar navbar-dark py-3 navbar-expand-lg">
+          <a
+            class="navbar-brand fs-3 fw-bolder homePage"
+            data-aos="fade-down"
+            data-aos-duration="7000"
+            data-aos-delay="800"
+            >MV Rockerz <span class=""></span
+          ></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseTarget"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="list collapse navbar-collapse" id="collapseTarget">
+            <ul
+              class="navbar-nav ms-auto fw-bold d-flex align-items-center"
+              data-aos="fade-down"
+              data-aos-duration="7000"
+              data-aos-delay="1300"
+              style="font-size: 18px"
+            >
+              <li class="nav-item ms-3">
+                <a class="nav-link lastbtn homePage">Home</a>
+              </li>
+              <li class="nav-item ms-3">
+                <a class="nav-link lastbtn services">Services</a>
+              </li>
+              <li class="nav-item ms-3">
+                <a
+                  style="
+                    color: #05fd9b !important;
+                    text-decoration: underline;
+                    text-underline-offset: 7px;
+                  "
+                  class="nav-link lastbtn resume"
+                  >Resume</a
+                >
+              </li>
+              <li class="nav-item ms-3">
+                <a class="nav-link lastbtn">Work</a>
+              </li>
+              <li class="nav-item ms-3">
+                <a class="nav-link lastbtn">Contact</a>
+              </li>
+              <li class="nav-item ms-3">
+                <a id="newbtn" class="nav-link newbtn">Hire me</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div class="row mt-vs-3 mt-sm-3 p-vs-1">
+        <div
+          class="col-lg-4 col-md-4 col-11 col-sm-11 ms-vs-3 ms-sm-3 firstDiv"
+        >
+          <h1
+            data-aos="fade-right"
+            data-aos-duration="7000"
+            data-aos-delay="1300"
+            class="fs-lg-21 fs-md-21 py-3"
+            style="color: white"
+          >
+            Why hire me?
+          </h1>
+          <p
+            data-aos="fade-left"
+            data-aos-duration="7000"
+            data-aos-delay="1600"
+            class="fs-lg-13 fs-md-13"
+          >
+            As a <b>full-stack web developer</b>, I engineer responsive and
+            dynamic applications powered by
+            <b
+              >HTML, CSS, JavaScript, Bootstrap, Node.js, Express.js and
+              MongoDB</b
+            >. I streamline development workflows using <b>GitHub </b> and
+            deploy production-ready solutions via <b>Vercel</b>. My focus is on
+            building scalable systems that not only perform well but evolve with
+            user needs.
+          </p>
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="12000"
+            data-aos-delay="1800"
+            class="d-flex flex-column align-items-center mt-4 pt-2"
+          >
+            <button
+              data-aos="flip-left"
+              class="btn btn-primary btnbuttons btncolor"
+              type="button"
+              style="border: none; padding: 10px 0; width: 70%"
+            >
+              Experience
+            </button>
+            <button
+              class="btn btn-primary mt-3 btnbuttons"
+              type="button"
+              style="border: none; padding: 10px 0; width: 70%"
+            >
+              Education
+            </button>
+            <button
+              class="btn btn-primary mt-3 btnbuttons"
+              type="button"
+              style="border: none; padding: 10px 0; width: 70%"
+            >
+              Skills
+            </button>
+            <button
+              class="btn btn-primary mt-3 btnbuttons"
+              type="button"
+              style="border: none; padding: 10px 0; width: 70%"
+            >
+              About me
+            </button>
+          </div>
+        </div>
+        <div
+          class="col-lg-7 col-md-7 col-12 col-sm-12 mt-sm-1 mt-vs-5 mb-sm-5 mb-vs-5 pb-vs-3 pb-sm-3"
+        >
+          <div class="buttonClick">
+            <h1
+              data-aos="fade-left"
+              data-aos-duration="7000"
+              data-aos-delay="2100"
+              class="fs-3 py-4 ms-vs-3 ms-sm-3"
+              style="color: white"
+            >
+              My experience
+            </h1>
+            <p
+              data-aos="fade-right"
+              data-aos-duration="7000"
+              data-aos-delay="2300"
+              class="fs-lg-15 fs-md-15 ms-vs-3 ms-sm-3"
+              style="text-indent: 80px; width: 90%; text-align: justify"
+            >
+              I've developed full-stack web applications with a focus on
+              responsive design and clean architecture. My experience spans
+              frontend, backend, and deployment using modern tools like GitHub
+              and Vercel.
+            </p>
+            <div
+              data-aos="zoom-in"
+              data-aos-duration="15000"
+              data-aos-delay="2500"
+              class="boxes d-flex justify-content-center mt-vs-3 mt-sm-3"
+              style="overflow-y: scroll; flex-wrap: wrap; height: 360px"
+            >
+              <div
+                class="card m-3 w-vs-95 w-vs-95 w-lg-45 w-md-45 pt-4 pe-3 ps-4"
+              >
+                <h4 class="py-2" style="font-size: 16px; color: #05fd9b">
+                  Feb 2025 - present
+                </h4>
+                <h1 class="fs-5 pt-2 pb-1">Full Stack Developer</h1>
+                <h6 class="pb-4" style="font-size: 14px; color: #b7b7c6">
+                  Software Engineer
+                </h6>
+                <ul class="pt-4 pb-2">
+                  <li>Neoicon Solutions</li>
+                </ul>
+              </div>
+              <div
+                class="card m-3 w-vs-95 w-vs-95 w-lg-45 w-md-45 pt-4 pe-3 ps-4"
+              >
+                <h4 class="py-2" style="font-size: 16px; color: #05fd9b">
+                  May 2024 - oct 2024
+                </h4>
+                <h1 class="fs-5 pb-1">Full Stack developer (MERN)</h1>
+                <h6 class="pb-2" style="font-size: 14px; color: #b7b7c6">
+                  Intern
+                </h6>
+                <ul class="pt-4 pb-2">
+                  <li>PrepInsta</li>
+                </ul>
+              </div>
+              <div
+                class="card m-3 w-vs-95 w-vs-95 w-lg-45 w-md-45 pt-4 pe-3 ps-4"
+              >
+                <h4 class="py-2" style="font-size: 16px; color: #05fd9b">
+                  Mar 2024 - May 2024
+                </h4>
+                <h1 class="fs-5 pb-1">Full Stack developer (MERN)</h1>
+                <h6 class="pb-2" style="font-size: 14px; color: #b7b7c6">
+                  Intern
+                </h6>
+                <ul class="pt-4 pb-2">
+                  <li>Rinex Technology</li>
+                </ul>
+              </div>
+              <div
+                class="card m-3 w-vs-95 w-vs-95 w-lg-45 w-md-45 pt-4 pe-3 ps-4"
+              >
+                <h4 class="py-2" style="font-size: 16px; color: #05fd9b">
+                  Sep 2024 - Nov 2024
+                </h4>
+                <h1 class="fs-5 pb-1">Data Structures & Algorithm</h1>
+                <h6 class="pb-2" style="font-size: 14px; color: #b7b7c6">
+                  Course
+                </h6>
+                <ul class="pt-4 pb-2">
+                  <li>PrepInsta</li>
+                </ul>
+              </div>
+              <div
+                class="card m-3 w-vs-95 w-vs-95 w-lg-45 w-md-45 pt-4 pe-3 ps-4"
+              >
+                <h4 class="py-2" style="font-size: 16px; color: #05fd9b">
+                  Apr 2024 - Jun 2024
+                </h4>
+                <h1 class="fs-5 pb-1">Frontend</h1>
+                <h6 class="pb-2" style="font-size: 14px; color: #b7b7c6">
+                  Course
+                </h6>
+                <ul class="pt-4 pb-2">
+                  <li>PrepInsta</li>
+                </ul>
+              </div>
+              <div
+                class="card m-3 w-vs-95 w-vs-95 w-lg-45 w-md-45 pt-4 pe-3 ps-4"
+              >
+                <h4 class="py-2" style="font-size: 16px; color: #05fd9b">
+                  Aug 2024 - Sep 2024
+                </h4>
+                <h1 class="fs-5 pb-1">Java</h1>
+                <h6 class="pb-2" style="font-size: 14px; color: #b7b7c6">
+                  Course
+                </h6>
+                <ul class="pt-4 pb-2">
+                  <li>PrepInsta</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="buttonClick d-none">
+            <h1 class="fs-3 py-4 ms-vs-3 ms-sm-3" style="color: white">
+              My education
+            </h1>
+            <p
+              class="fs-lg-15 fs-md-15 ms-vs-3 ms-sm-3"
+              style="text-indent: 80px; width: 90%; text-align: justify"
+            >
+              Completed my undergraduate studies with a solid academic record,
+              gaining strong fundamentals in computer science and software
+              development. My coursework and hands-on projects helped shape my
+              problem-solving mindset and technical proficiency. This foundation
+              continues to support my growth in full-stack web development.
+            </p>
+            <div
+              class="boxes d-flex justify-content-vs-center mt-vs-5 mt-sm-5"
+              style="overflow-y: scroll; flex-wrap: wrap; height: 360px"
+            >
+              <div
+                class="card m-3 w-vs-95 w-vs-95 w-lg-45 w-md-45 pt-4 pe-3 ps-4 h-68"
+              >
+                <h4 class="py-2" style="font-size: 16px; color: #05fd9b">
+                  2020 - 2024
+                </h4>
+                <h1 class="fs-5 pt-2 pb-1">
+                  Thanthai Periyar Gov Inst of Tech
+                </h1>
+                <h6 class="pb-3" style="font-size: 14px; color: #b7b7c6">
+                  Computer Science
+                </h6>
+                <ul class="pt-4 pb-3">
+                  <li>CGPA - 8.14</li>
+                </ul>
+              </div>
+              <div
+                class="card m-3 w-vs-95 w-vs-95 w-lg-45 w-md-45 pt-4 pe-3 ps-4 h-68"
+              >
+                <h4 class="py-2" style="font-size: 16px; color: #05fd9b">
+                  May 2024 - Feb 2025
+                </h4>
+                <h1 class="fs-5 pt-3 pb-1">Full Stack Developer</h1>
+                <h6 class="pb-2 pt-3" style="font-size: 14px; color: #b7b7c6">
+                  Course
+                </h6>
+                <ul class="pt-4 pb-3">
+                  <li>Youtube</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="buttonClick skills d-none">
+            <h1 class="fs-3 py-4 ms-vs-3 ms-sm-3" style="color: white">
+              My skills
+            </h1>
+            <p
+              class="fs-lg-15 fs-md-15 ms-vs-3 ms-sm-3"
+              style="text-indent: 80px; width: 90%; text-align: justify"
+            >
+              Proficient in full-stack development with expertise in HTML, CSS,
+              JavaScript, Node.js, and MongoDB. Skilled in building responsive
+              interfaces and integrating scalable backend systems. Comfortable
+              with GitHub for version control and Vercel for smooth deployment.
+              Continuously exploring advanced CSS and animation techniques to
+              enhance user experience.
+            </p>
+            <div
+              class="boxes d-flex justify-content-vs-center mt-sm-5 mt-vs-5"
+              style="
+                overflow-y: scroll;
+                flex-wrap: wrap;
+                height: 320px;
+                flex-wrap: wrap;
+                gap: 5%;
+              "
+            >
+              <div
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                data-bs-title="HTML5"
+                class="card w-lg-20 w-md-20 w-sm-40 w-vs-40 d-flex justify-content-center align-items-center"
+                style="height: 150px"
+              >
+                <i class="fa-brands fa-html5" style="font-size: 60px"></i>
+              </div>
+              <div
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                data-bs-title="CSS"
+                class="card w-lg-20 w-md-20 w-sm-40 w-vs-40 d-flex justify-content-center align-items-center"
+                style="height: 150px"
+              >
+                <i class="fa-brands fa-css3" style="font-size: 60px"></i>
+              </div>
+              <div
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                data-bs-title="Bootstrap 5"
+                class="card w-lg-20 w-md-20 w-sm-40 w-vs-40 d-flex justify-content-center align-items-center"
+                style="height: 150px"
+              >
+                <i class="fa-brands fa-bootstrap" style="font-size: 60px"></i>
+              </div>
+              <div
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                data-bs-title="Javascript"
+                class="card w-lg-20 w-md-20 w-sm-40 w-vs-40 d-flex justify-content-center align-items-center"
+                style="height: 150px"
+              >
+                <i class="fa-brands fa-js" style="font-size: 60px"></i>
+              </div>
+              <div
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                data-bs-title="Mongo DB"
+                class="card w-lg-20 w-md-20 w-sm-40 w-vs-40 d-flex justify-content-center align-items-center"
+                style="height: 150px"
+              >
+                <i class="fa-solid fa-database" style="font-size: 60px"></i>
+              </div>
+              <div
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                data-bs-title="Node JS"
+                class="card w-lg-20 w-md-20 w-sm-40 w-vs-40 d-flex justify-content-center align-items-center"
+                style="height: 150px"
+              >
+                <i class="fa-brands fa-node-js" style="font-size: 60px"></i>
+              </div>
+              <div
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                data-bs-title="Express JS"
+                class="card w-lg-20 w-md-20 w-sm-40 w-vs-40 d-flex justify-content-center align-items-center"
+                style="height: 150px"
+              >
+                <i class="fa-solid fa-server" style="font-size: 60px"></i>
+              </div>
+              <div
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                data-bs-title="Java"
+                class="card w-lg-20 w-md-20 w-sm-40 w-vs-40 d-flex justify-content-center align-items-center"
+                style="height: 150px"
+              >
+                <i class="fa-brands fa-java" style="font-size: 60px"></i>
+              </div>
+            </div>
+          </div>
+          <div class="buttonClick d-none">
+            <h1 class="fs-3 py-4 ms-vs-3 ms-sm-3" style="color: white">
+              About me
+            </h1>
+            <p
+              class="fs-lg-15 fs-md-15 ms-vs-3 ms-sm-3"
+              style="text-indent: 80px; width: 90%; text-align: justify"
+            >
+              I'm a passionate and detail-oriented full-stack web developer with
+              a deep appreciation for clean design and efficient code. I thrive
+              on turning ideas into interactive, responsive experiences using
+              technologies like HTML, CSS, JavaScript, Node.js, and MongoDB.
+              Beyond technical skills, I bring a methodical mindset, a love for
+              problem-solving, and a commitment to continuous growth. Whether
+              it's refining animations or optimizing backend logic, I aim to
+              build solutions that are not just functional — but memorable.
+            </p>
+            <div
+              class="profile d-flex flex-lg-row flex-md-row flex-sm-column flex-vs-column mt-2"
+            >
+              <div class="part1 w-lg-47 w-md-47 me-1" style="color: white">
+                <div
+                  class="card m-4 d-flex flex-row pt-3 pb-2 px-5 align-items-center justify-content-center"
+                >
+                  <h4 class="pe-3">Name</h4>
+                  <h2>Mullaivendan K</h2>
+                </div>
+                <div
+                  class="card m-4 d-flex flex-row pt-3 pb-2 px-5 align-items-center justify-content-center"
+                >
+                  <h4 class="pe-3">Phone no</h4>
+                  <h2>9025532548</h2>
+                </div>
+                <div
+                  class="card m-4 d-flex flex-row pt-3 pb-2 px-5 align-items-center justify-content-center"
+                >
+                  <h4 class="pe-3">Freelance</h4>
+                  <h2>Available</h2>
+                </div>
+              </div>
+              <div class="part2 w-lg-47 w-md-47" style="color: white">
+                <div
+                  class="card m-4 d-flex flex-row pt-3 pb-2 px-4 align-items-center justify-content-center"
+                >
+                  <h4 class="pe-3">Experience</h4>
+                  <h2>1 Year</h2>
+                </div>
+                <div
+                  class="card m-4 d-flex flex-row pt-3 pb-2 px-4 align-items-center justify-content-center"
+                >
+                  <h4 class="pe-3">E-mail</h4>
+                  <h2>kmullai2223@gmail.com</h2>
+                </div>
+                <div
+                  class="card m-4 d-flex flex-row pt-3 pb-2 px-4 align-items-center justify-content-center"
+                >
+                  <h4 class="pe-3">Language</h4>
+                  <h2>English, Tamil</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        AOS.init();
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- word chaning  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
+    </script>
+    <script src="resume.js"></script>
+  </body>
+</html>
