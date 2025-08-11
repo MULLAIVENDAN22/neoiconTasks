@@ -92,3 +92,20 @@ resume.addEventListener("click", () => {
   const targetPage = "../resume/resume.html";
   window.location.href = `./loading/loading.html?next=${encodeURIComponent(targetPage)}`;
 });
+
+const contact = document.querySelectorAll(".contact");
+contact.forEach((value)=>{
+  value.addEventListener("click", () => {
+  let targetPage = "../contact/contact.html";
+  window.location.href = `./loading/loading.html?next=${encodeURIComponent(targetPage)}`;
+});
+})
+
+function downloadFile() {
+    const link = document.createElement('a');
+    link.href = 'profile.pdf'; 
+    link.download = 'profile.pdf';
+    document.body.appendChild(link); 
+    link.click();
+    document.body.removeChild(link); 
+  }

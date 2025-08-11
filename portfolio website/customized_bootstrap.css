@@ -409,7 +409,7 @@
     width: 48% !important;
   }
 
-  .w-vs-489 {
+  .w-vs-49 {
     width: 49% !important;
   }
 
@@ -427,6 +427,10 @@
 
   .w-vs-80 {
     width: 80% !important;
+  }
+
+  .w-vs-90 {
+    width: 90% !important;
   }
 
   .w-vs-95 {
@@ -818,6 +822,10 @@
 
   .w-sm-80 {
     width: 80% !important;
+  }
+
+  .w-sm-90 {
+    width: 90% !important;
   }
 
   .w-sm-95 {

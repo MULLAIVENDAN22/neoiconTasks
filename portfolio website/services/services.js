@@ -8,7 +8,7 @@ homePage.forEach((value) => {
 
 const services = document.querySelector(".services");
 services.addEventListener("click", () => {
-  let targetPage = "services.html";
+  let targetPage = "../services/services.html";
   window.location.href = `../loading/loading.html?next=${encodeURIComponent(targetPage)}`;
 });
 
@@ -17,3 +17,11 @@ resume.addEventListener("click", () => {
   let targetPage = "../resume/resume.html";
   window.location.href = `../loading/loading.html?next=${encodeURIComponent(targetPage)}`;
 });
+
+const contact = document.querySelectorAll(".contact");
+contact.forEach((value)=>{
+  value.addEventListener("click", () => {
+  let targetPage = "../contact/contact.html";
+  window.location.href = `../loading/loading.html?next=${encodeURIComponent(targetPage)}`;
+});
+})
