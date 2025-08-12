@@ -39,3 +39,9 @@ contact.forEach((value)=>{
   window.location.href = `../loading/loading.html?next=${encodeURIComponent(targetPage)}`;
 });
 })
+
+const work = document.querySelector(".work");
+work.addEventListener("click", () => {
+  let targetPage = "../work/work.html";
+  window.location.href = `../loading/loading.html?next=${encodeURIComponent(targetPage)}`;
+});

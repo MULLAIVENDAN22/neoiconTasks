@@ -27,6 +27,12 @@ contact.forEach((value)=>{
 });
 })
 
+const work = document.querySelector(".work");
+work.addEventListener("click", () => {
+  let targetPage = "../work/work.html";
+  window.location.href = `../loading/loading.html?next=${encodeURIComponent(targetPage)}`;
+});
+
 document.querySelector("form").addEventListener("submit", function (e) {
   e.preventDefault();
   emailjs
