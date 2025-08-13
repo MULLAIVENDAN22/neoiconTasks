@@ -109,8 +109,8 @@ work.addEventListener("click", () => {
 
 function downloadFile() {
   const link = document.createElement("a");
-  link.href = "profile.pdf";
-  link.download = "profile.pdf";
+  link.href = "Profile.pdf";
+  link.download = "Profile.pdf";
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
