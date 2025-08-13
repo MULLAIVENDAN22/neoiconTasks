@@ -94,18 +94,24 @@ resume.addEventListener("click", () => {
 });
 
 const contact = document.querySelectorAll(".contact");
-contact.forEach((value)=>{
+contact.forEach((value) => {
   value.addEventListener("click", () => {
-  let targetPage = "../contact/contact.html";
+    let targetPage = "../contact/contact.html";
+    window.location.href = `./loading/loading.html?next=${encodeURIComponent(targetPage)}`;
+  });
+});
+
+const work = document.querySelector(".work");
+work.addEventListener("click", () => {
+  let targetPage = "../work/work.html";
   window.location.href = `./loading/loading.html?next=${encodeURIComponent(targetPage)}`;
 });
-})
 
 function downloadFile() {
-    const link = document.createElement('a');
-    link.href = 'profile.pdf'; 
-    link.download = 'profile.pdf';
-    document.body.appendChild(link); 
-    link.click();
-    document.body.removeChild(link); 
-  }
+  const link = document.createElement("a");
+  link.href = "profile.pdf";
+  link.download = "profile.pdf";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}

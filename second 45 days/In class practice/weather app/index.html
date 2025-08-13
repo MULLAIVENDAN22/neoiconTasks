@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="image.png" type="image/x-icon" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>MV Portfolio</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        font-family: "JetBrains Mono", monospace;
+        background-color: #1c1b22;
+        box-sizing: border-box;
+        scrollbar-color: #05fd9b #8b8b94;
+      }
+      .container {
+        box-sizing: border-box;
+      }
+    </style>
+    <link rel="stylesheet" href="../../../customized_bootstrap.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div
+        class="row d-flex flex-row justify-content-center align-item-center mt-5 pt-5"
+      >
+        <div
+          class="card col-4 p-3 weather"
+          style="
+            background: linear-gradient(135deg, #e121d5, #2519fd);
+            color: white;
+            border-radius: 25px;
+            box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+          "
+        >
+          <div class="d-flex flex-row justify-content-between px-4">
+            <input
+              placeholder="city"
+              class="px-4 py-2 fs-3 fw-bolder"
+              type="text"
+              style="
+                border-radius: 20px;
+                border: none;
+                width: 80%;
+                color: rgb(73, 73, 73);
+              "
+            />
+            <button
+              style="
+                border: none;
+                height: 50px;
+                width: 50px;
+                background-color: white;
+                border-radius: 50%;
+                display: grid;
+                place-items: center;
+              "
+            >
+              <i
+                class="fa-solid fa-magnifying-glass fs-4"
+                style="color: black"
+              ></i>
+            </button>
+          </div>
+          <div
+            class=""
+            style="
+              display: flex;
+              flex-direction: column;
+              width: 100%;
+              align-items: center;
+            "
+          >
+            <div class="mx-5 mb-5" style="width: 100px; height: 100px">
+              <img class="img-fluid my-5" src="" alt="" srcset="" />
+            </div>
+            <h1 class="mt-2"></h1>
+            <h2></h2>
+          </div>
+          <div
+            class="mb-3 mt-5 d-flex flex-row justify-content-center align-item-center"
+            style="gap: 15%"
+          >
+            <div
+              class="d-flex flex-row align-item-center justify-content-center"
+              style="gap: 5%"
+            >
+              <div>
+                <svg
+                class="me-3"
+                style="height: 40px; width: 40px;"
+                  viewBox="0 0 24 24"
+                  id="Layer_1"
+                  data-name="Layer 1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#ffffff"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <defs>
+                      <style>
+                        .cls-1 {
+                          fill: none;
+                          stroke: #ffffff;
+                          stroke-miterlimit: 10;
+                          stroke-width: 1.92px;
+                        }
+                      </style>
+                    </defs>
+                    <path
+                      class="cls-1"
+                      d="M.5,3.4c1.92,0,1.92.95,3.83.95S6.25,3.4,8.16,3.4s1.92.95,3.83.95,1.92-.95,3.83-.95,1.92.95,3.84.95,1.92-.95,3.84-.95"
+                    ></path>
+                    <path
+                      class="cls-1"
+                      d="M.5,9.15c1.92,0,1.92.95,3.83.95s1.92-.95,3.83-.95,1.92.95,3.83.95,1.92-.95,3.83-.95,1.92.95,3.84.95,1.92-.95,3.84-.95"
+                    ></path>
+                    <path
+                      class="cls-1"
+                      d="M.5,14.9c1.92,0,1.92.95,3.83.95s1.92-.95,3.83-.95,1.92.95,3.83.95,1.92-.95,3.83-.95,1.92.95,3.84.95,1.92-.95,3.84-.95"
+                    ></path>
+                    <path
+                      class="cls-1"
+                      d="M.5,20.65c1.92,0,1.92,1,3.83,1s1.92-1,3.83-1,1.92,1,3.83,1,1.92-1,3.83-1,1.92,1,3.84,1,1.92-1,3.84-1"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <div>
+                <h5 style="white-space: nowrap"></h5>
+                <h6>humidity</h6>
+              </div>
+            </div>
+            <div
+              class="d-flex flex-row align-item-center justify-content-center"
+            >
+              <div><i class="fa-solid fa-wind fs-2 me-3"></i></div>
+              <div>
+                <h5></h5>
+                <h6>wind speed</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        AOS.init();
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- word chaning  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

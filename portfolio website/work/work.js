@@ -1,6 +1,5 @@
 const logicprojectArray = [
   {
-    h1: "01",
     h2: "Analog Clock",
     p: "A sleek analog clock that brings classic timekeeping to your modern interface. Watch the hands move in real time, styled to match your design aesthetic.",
     h6: "Html, Css, Javascript",
@@ -9,7 +8,14 @@ const logicprojectArray = [
     img: "./images/analogClock.png",
   },
   {
-    h1: "02",
+    h2: "Weather App",
+    p: "A responsive weather app that fetches real-time data using OpenWeatherMap API and displays temperature, conditions, and icons with clean UI.",
+    h6: "Html, Css, Javascript",
+    a1: "https://mullaivendan22.github.io/neoiconTasks/second%2045%20days/In%20class%20practice/weather%20app/",
+    a2: "https://github.com/MULLAIVENDAN22/neoiconTasks/tree/main/second%2045%20days/In%20class%20practice/weather%20app/",
+    img: "./images/weather.png",
+  },
+  {
     h2: "Quiz App",
     p: "Test your knowledge and challenge yourself with this interactive Quiz App. Choose a topic, answer questions, and track your score in real time.",
     h6: "Html, Css, Javascript",
@@ -18,7 +24,6 @@ const logicprojectArray = [
     img: "./images/quizApp.png",
   },
   {
-    h1: "03",
     h2: "Flip Card",
     p: "Flip, match, and race against the clock in this fast-paced memory game. You’ve got limited lives—so think quick and stay sharp to win!",
     h6: "Html, Css, Javascript",
@@ -27,7 +32,6 @@ const logicprojectArray = [
     img: "./images/cardGame.png",
   },
   {
-    h1: "04",
     h2: "Todo List",
     p: "Your daily tasks, sorted. Plan smarter, tick off goals, and keep life on track with this simple To-Do List.",
     h6: "Html, Css, Javascript",
@@ -36,7 +40,6 @@ const logicprojectArray = [
     img: "./images/todoList1.png",
   },
   {
-    h1: "05",
     h2: "Random Password Generator",
     p: "Generate secure passwords and one-time codes instantly with a single click. Stay protected with randomized strings designed for safety and simplicity.",
     h6: "Html, Css, Javascript",
@@ -45,7 +48,6 @@ const logicprojectArray = [
     img: "./images/passwordGenerate.png",
   },
   {
-    h1: "06",
     h2: "QR Generator",
     p: "Convert text, URLs, or contact info into scannable QR codes in seconds. Fast, reliable, and ready to share—your data, now just a scan away.",
     h6: "Html, Css, Javascript",
@@ -54,7 +56,6 @@ const logicprojectArray = [
     img: "./images/QR.png",
   },
   {
-    h1: "07",
     h2: "CRUD Opertion using Local Storage",
     p: "Add, edit, and delete entries through a simple form—no backend needed. Your data is stored locally and displayed instantly in a dynamic table.",
     h6: "Html, Css, Javascript",
@@ -63,7 +64,6 @@ const logicprojectArray = [
     img: "./images/crudOperation.png",
   },
   {
-    h1: "08",
     h2: "Calculator",
     p: "A sleek, responsive calculator built with clean UI and intuitive logic. Handles basic arithmetic operations with real-time input and output display.",
     h6: "Html, Css, Javascript",
@@ -74,7 +74,6 @@ const logicprojectArray = [
 ];
 const timingprojectArray = [
   {
-    h1: "01",
     h2: "Frontend webpage",
     p: "timing 2 to 3 hrs",
     h6: "Html, Css",
@@ -83,7 +82,6 @@ const timingprojectArray = [
     img: "./images/01.png",
   },
   {
-    h1: "02",
     h2: "Frontend webpage",
     p: "timing 2 to 3 hrs",
     h6: "Html, Css",
@@ -92,7 +90,6 @@ const timingprojectArray = [
     img: "./images/02.png",
   },
   {
-    h1: "03",
     h2: "Frontend webpage",
     p: "timing 2 hrs",
     h6: "Html, Css",
@@ -101,7 +98,6 @@ const timingprojectArray = [
     img: "./images/03.png",
   },
   {
-    h1: "04",
     h2: "Frontend webpage",
     p: "timing 0 to 1 hrs",
     h6: "Html, Css",
@@ -110,7 +106,6 @@ const timingprojectArray = [
     img: "./images/04.png",
   },
   {
-    h1: "05",
     h2: "Frontend webpage",
     p: "timing 0 to 1 hrs",
     h6: "Html, Css",
@@ -119,7 +114,6 @@ const timingprojectArray = [
     img: "./images/05.png",
   },
   {
-    h1: "06",
     h2: "Frontend webpage",
     p: "timing 1 to 2 hrs",
     h6: "Html, Css",
@@ -128,7 +122,6 @@ const timingprojectArray = [
     img: "./images/06.png",
   },
   {
-    h1: "07",
     h2: "Frontend webpage",
     p: "timing 0 to 1 hrs",
     h6: "Html, Css",
@@ -137,7 +130,6 @@ const timingprojectArray = [
     img: "./images/07.png",
   },
   {
-    h1: "08",
     h2: "Frontend webpage",
     p: "timing 0 to 30 min",
     h6: "Html, Css",
@@ -146,7 +138,6 @@ const timingprojectArray = [
     img: "./images/08.png",
   },
   {
-    h1: "09",
     h2: "Frontend webpage",
     p: "timing 1 to 2 hrs",
     h6: "Html, Css",
@@ -155,7 +146,6 @@ const timingprojectArray = [
     img: "./images/09.png",
   },
   {
-    h1: "10",
     h2: "Frontend webpage",
     p: "timing 0 to 1 hrs",
     h6: "Html, Css",
@@ -166,7 +156,6 @@ const timingprojectArray = [
 ];
 const mainprojectArray = [
   {
-    h1: "01",
     h2: "Portfolio Website",
     p: "timing 2 to 3 hrs",
     h6: "Html, Css",
@@ -210,7 +199,7 @@ function nextPage(e, count, array) {
     return;
   } else {
     count[0]++;
-    e.querySelector("h1").textContent = array[count[0]].h1;
+    e.querySelector("h1").textContent = count[0] < 10 ? "0" + (count[0]+1) : count[0];
     e.querySelector("h2").textContent = array[count[0]].h2;
     e.querySelector("p").textContent = array[count[0]].p;
     e.querySelector("h6").textContent = array[count[0]].h6;
@@ -224,7 +213,7 @@ function perviousPage(e, count, array) {
     return;
   } else {
     count[0]--;
-    e.querySelector("h1").textContent = array[count[0]].h1;
+    e.querySelector("h1").textContent = count[0] < 10 ? "0" + (count[0]+1) : count[0];
     e.querySelector("h2").textContent = array[count[0]].h2;
     e.querySelector("p").textContent = array[count[0]].p;
     e.querySelector("h6").textContent = array[count[0]].h6;
@@ -260,7 +249,8 @@ work.addEventListener("click", () => {
   window.location.href = `../loading/loading.html?next=${encodeURIComponent(targetPage)}`;
 });
 
-const hel = document.querySelector(".hel"); console.log(hel);
+const hel = document.querySelector(".hel");
+console.log(hel);
 
 const contact = document.querySelectorAll(".contact");
 contact.forEach((value) => {
