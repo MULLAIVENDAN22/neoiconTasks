@@ -1,5 +1,7 @@
 <!doctype html>
 <html lang="en">
+  <!-- timming   6 10  
+    7 19             -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -39,8 +41,8 @@
         margin: 0;
       }
       body {
-        /* width: 100vw;
-              height: 100vh; */
+        width: 100vw;
+        height: 100vh;
         font-family: "Poppins", sans-serif;
         background-color: white;
         box-sizing: border-box;
@@ -64,12 +66,24 @@
       ul li {
         list-style-type: none;
       }
+      .navbar-nav li a:hover {
+        color: #3a7afe !important;
+      }
     </style>
     <link rel="stylesheet" href="../" />
   </head>
   <body>
     <div class="container">
-      <header>
+      <header
+        class="px-2"
+        style="
+          position: sticky;
+          top: 0;
+          background-color: white;
+          z-index: 5;
+          box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+        "
+      >
         <nav class="navbar navbar-dark py-3 navbar-expand-lg">
           <a
             class="navbar-brand fs-3 fw-bolder"
@@ -108,7 +122,28 @@
                 <a class="nav-link lastbtn resume">Shop</a>
               </li>
               <li class="nav-item ms-4">
-                <a class="nav-link lastbtn work">Blog</a>
+                <div class="dropdown">
+                  <a
+                    class="btn btn-secondary dropdown-toggle nav-link"
+                    style="border: none; background-color: white"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Blog
+                  </a>
+
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="index.html">Blog List</a></li>
+                    <li>
+                      <a class="dropdown-item" href="blogGrid.html">Blog Grid</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="BlogDetails.html">Blog Details</a>
+                    </li>
+                  </ul>
+                </div>
               </li>
               <li class="nav-item ms-4">
                 <a class="nav-link lastbtn contact">Contact us</a>
@@ -415,7 +450,12 @@
                     </a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link me-3" href="#">1</a>
+                    <a
+                      class="page-link me-3 active"
+                      style="color: white !important"
+                      href="#"
+                      >1</a
+                    >
                   </li>
                   <li class="page-item">
                     <a class="page-link me-3" href="#">2</a>
@@ -797,7 +837,7 @@
             </div>
             <div class="d-flex align-items-center">
               <div class="me-3" style="color: rgb(178, 178, 178)">
-                <i class="fa-solid fa-certificate"></i>
+                <i class="fa-solid fa-certificate fs-1"></i>
               </div>
               <div>
                 <h3 class="fw-bolder" style="font-size: 22px !important">
@@ -812,7 +852,7 @@
             </div>
             <div class="d-flex align-items-center">
               <div class="me-3" style="color: rgb(178, 178, 178)">
-                <i class="fa-solid fa-headset"></i>
+                <i class="fa-solid fa-headset fs-1"></i>
               </div>
               <div>
                 <h3 class="fw-bolder" style="font-size: 22px !important">
@@ -827,7 +867,7 @@
             </div>
             <div class="d-flex align-items-center">
               <div class="me-3" style="color: rgb(178, 178, 178)">
-                <i class="fa-solid fa-shield"></i>
+                <i class="fa-solid fa-shield fs-1"></i>
               </div>
               <div>
                 <h3 class="fw-bolder" style="font-size: 22px !important">
