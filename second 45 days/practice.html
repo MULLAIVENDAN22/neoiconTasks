@@ -45,7 +45,7 @@
         border-radius: 10px;
         background-color: rgb(36, 36, 36);
       }
-      p{
+      p {
         list-style-type: circle;
         color: white;
         font-weight: 600;
@@ -55,14 +55,98 @@
     </style>
   </head>
   <body>
-    <div id="container">
-      <input type="text">
-      <button id="change">change</button>
+    <header
+      class="px-2"
+      style="
+        position: sticky;
+        top: 0;
+        background-color: white;
+        z-index: 5;
+        box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+      "
+    >
+      <nav class="navbar navbar-white py-3 navbar-expand-lg">
+        <a
+          class="navbar-brand fs-3 fw-bolder"
+          style="height: 50px; width: 100px"
+          data-aos="fade-down"
+          data-aos-duration="7000"
+          data-aos-delay="800"
+          ><img
+            src="https://motaadmin.dexignlab.com/codeigniter/demo/public/assets/frontend/images/logo.png"
+            alt=""
+            srcset=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseTarget"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="list collapse navbar-collapse" id="collapseTarget">
+          <ul
+            class="navbar-nav ms-auto fw-bold d-flex align-items-center"
+            data-aos="fade-down"
+            data-aos-duration="7000"
+            data-aos-delay="1300"
+            style="font-size: 18px"
+          >
+            <li class="nav-item ms-4">
+              <a class="nav-link lastbtn" href="index.html">Home</a>
+            </li>
+            <li class="nav-item ms-4">
+              <a class="nav-link lastbtn" href="index.html">About us</a>
+            </li>
+            <li class="nav-item ms-4">
+              <a class="nav-link lastbtn">Shop</a>
+            </li>
+            <li class="nav-item ms-4">
+              <div class="dropdown">
+                <a
+                  class="btn btn-secondary dropdown-toggle nav-link"
+                  style="border: none; background-color: white"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Blog
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./blog/index.html"
+                      >Blog List</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./blog/blogGrid.html"
+                      >Blog Grid</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./blog/BlogDetails.html"
+                      >Blog Details</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item ms-4">
+              <a class="nav-link lastbtn" href="./blog/BlogDetails.html"
+                >Contact us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+     
+    </header>
     <script src="practice.js"></script>
   </body>
 </html>
-
-
 
 <!-- 
 <div class="container">
