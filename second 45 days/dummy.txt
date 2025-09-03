@@ -1,0 +1,199 @@
+🎧 HTML <audio> Element
+
+<audio id="myAudio" controls autoplay loop muted preload="auto">
+  <source src="audio.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+✅ HTML Attributes
+- src: URL of the audio file
+- controls: Displays built-in play/pause/volume controls
+- autoplay: Starts playing automatically when the page loads
+- loop: Repeats the audio indefinitely
+- muted: Starts the audio muted
+- preload: Hints how the browser should preload the audio (auto, metadata, none)
+
+🎨 CSS Styling Tips
+audio {
+  width: 100%;
+  outline: none;
+}
+
+🧠 JavaScript Control with HTMLAudioElement
+
+// Accessing audio
+const audio = document.getElementById("myAudio");
+// or
+const audio = new Audio("audio.mp3");
+
+🔑 Properties with Examples+
+console.log(audio.src);              // Get audio source
+audio.src = "new-audio.mp3";         // Set new source
+
+console.log(audio.currentTime);      // Get current time
+audio.currentTime = 10;              // Jump to 10 seconds
+
+console.log(audio.duration);         // Get total duration
+
+console.log(audio.paused);           // Check if paused
+
+audio.volume = 0.5;                  // Set volume (0.0 to 1.0)
+console.log(audio.volume);           // Get current volume
+
+audio.muted = true;                  // Mute audio
+console.log(audio.muted);            // Check if muted
+
+audio.loop = true;                   // Enable looping
+console.log(audio.loop);             // Check loop status
+
+audio.playbackRate = 1.5;            // Speed up playback
+console.log(audio.playbackRate);     // Get playback speed
+
+🛠️ Methods with Examples
+audio.play();                        // Start playback
+audio.pause();                       // Pause playback
+audio.load();                        // Reload audio
+
+console.log(audio.canPlayType("audio/mpeg")); // Check format support
+
+// Optional: Add text track (e.g., captions)
+const track = audio.addTextTrack("captions", "English", "en");
+track.mode = "showing";
+track.addCue(new VTTCue(0, 5, "Hello world"));
+
+🔔 Events with Examples
+audio.addEventListener("play", () => {
+  console.log("Audio started playing");
+});
+
+audio.addEventListener("pause", () => {
+  console.log("Audio paused");
+});
+
+audio.addEventListener("ended", () => {
+  console.log("Audio playback ended");
+});
+
+audio.addEventListener("timeupdate", () => {
+  console.log("Current time:", audio.currentTime);
+});
+
+audio.addEventListener("volumechange", () => {
+  console.log("Volume changed:", audio.volume);
+});
+
+🧪 Custom Audio Controls Example
+<button onclick="audio.play()">Play</button>
+<button onclick="audio.pause()">Pause</button>
+<button onclick="audio.currentTime = 0">Restart</button>
+<input type="range" min="0" max="1" step="0.1" onchange="audio.volume = this.value">
+
+
+
+
+
+🎥 HTML <video> Element
+
+<video id="myVideo" width="640" height="360" controls autoplay loop muted preload="auto" poster="thumbnail.jpg">
+  <source src="video.mp4" type="video/mp4">
+  <source src="video.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+
+✅ HTML Attributes
+- src: URL of the video file
+- controls: Displays built-in play/pause/volume/fullscreen controls
+- autoplay: Starts playing automatically when the page loads
+- loop: Repeats the video indefinitely
+- muted: Starts the video muted
+- preload: How the browser should preload the video (auto, metadata, none)
+- poster: Image shown before the video plays
+- width / height: Dimensions of the video player
+
+📦 preload Values
+- auto: Load the entire video if possible
+- metadata: Load only metadata (duration, dimensions, etc.)
+- none: Don’t preload anything until user interacts
+
+🎨 CSS Styling Tips
+video {
+  width: 100%;
+  max-width: 640px;
+  border-radius: 8px;
+  outline: none;
+}
+
+🧠 JavaScript Control with HTMLVideoElement
+
+// Accessing video
+const video = document.getElementById("myVideo");
+// or
+const video = new Video("video.mp4"); // Less common
+
+🔑 Properties with Examples
+console.log(video.src);               // Get video source
+video.src = "new-video.mp4";          // Set new source
+
+console.log(video.currentTime);       // Get current time
+video.currentTime = 30;               // Jump to 30 seconds
+
+console.log(video.duration);          // Get total duration
+
+console.log(video.paused);            // Check if paused
+
+video.volume = 0.7;                   // Set volume (0.0 to 1.0)
+console.log(video.volume);            // Get current volume
+
+video.muted = true;                   // Mute video
+console.log(video.muted);             // Check if muted
+
+video.loop = true;                    // Enable looping
+console.log(video.loop);              // Check loop status
+
+video.playbackRate = 1.25;            // Speed up playback
+console.log(video.playbackRate);      // Get playback speed
+
+video.poster = "new-thumbnail.jpg";   // Change poster image
+
+🛠️ Methods with Examples
+video.play();                         // Start playback
+video.pause();                        // Pause playback
+video.load();                         // Reload video
+
+console.log(video.canPlayType("video/mp4")); // Check format support
+
+// Optional: Add text track (e.g., subtitles)
+const track = video.addTextTrack("subtitles", "English", "en");
+track.mode = "showing";
+track.addCue(new VTTCue(0, 5, "Welcome to the video"));
+
+🔔 Events with Examples
+video.addEventListener("play", () => {
+  console.log("Video started playing");
+});
+
+video.addEventListener("pause", () => {
+  console.log("Video paused");
+});
+
+video.addEventListener("ended", () => {
+  console.log("Video playback ended");
+});
+
+video.addEventListener("timeupdate", () => {
+  console.log("Current time:", video.currentTime);
+});
+
+video.addEventListener("volumechange", () => {
+  console.log("Volume changed:", video.volume);
+});
+
+video.addEventListener("loadedmetadata", () => {
+  console.log("Metadata loaded:", video.duration);
+});
+
+🧪 Custom Video Controls Example
+<button onclick="video.play()">Play</button>
+<button onclick="video.pause()">Pause</button>
+<button onclick="video.currentTime = 0">Restart</button>
+<input type="range" min="0" max="1" step="0.1" onchange="video.volume = this.value">
